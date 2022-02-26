@@ -53,4 +53,7 @@ dependencies {
 
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //카카오톡
+    implementation "com.kakao.sdk:v2-user:2.0.1"
 }
