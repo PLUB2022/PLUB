@@ -18,14 +18,11 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="210dp">
+                        android:layout_height="wrap_content">
+
 
                         <ImageButton
                             android:id="@+id/ellipse_2"
@@ -67,50 +64,44 @@
 
                             />
 
-                        <TextView
-                            android:id="@+id/some_id"
-                            android:layout_width="792px"
-                            android:layout_height="102px"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginLeft="72px"
-                            android:layout_marginTop="168px"
-                            android:gravity="top"
-                            android:text="인기있는 소셜링1 (추천)"
-                            android:textAppearance="@style/some_id"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <View
-                            android:id="@+id/group_8"
-                            android:layout_width="40dp"
-                            android:layout_height="16dp"
+                            android:id="@+id/some_id3"
+                            android:layout_width="312dp"
+                            android:layout_height="206dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginLeft="24dp"
-                            android:layout_marginTop="4dp"
-                            android:background="#00000000"
+                            app:layout_constraintTop_toBottomOf="@id/ellipse_2"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/some_id" />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="23dp"
+                            android:background="#1A000000"
+                            />
 
-                        <TextView
-                            android:id="@+id/some_id2"
-                            android:layout_width="146dp"
-                            android:layout_height="74dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginLeft="24dp"
-                            android:gravity="center_vertical"
-                            android:lineSpacingExtra="5sp"
-                            android:text="별 자랑처럼 가득 그러나 이름자 이웃 거외다. 많은 내 릴케 거외"
-                            android:textAppearance="@style/some_id2"
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="234.14dp"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/group_8" />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ellipse_2"
+                            android:layout_marginTop="1dp"
+                            >
+
+                            <androidx.viewpager2.widget.ViewPager2
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:id="@+id/titleViewPager">
+                            </androidx.viewpager2.widget.ViewPager2>
+
+                        </FrameLayout>
+
+
+
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                </LinearLayout>
 
             </ScrollView>
 
