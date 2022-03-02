@@ -2,6 +2,9 @@
     <string name="app_name">SocialProject</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="some_id">인기있는 소셜링1(추천)</string>
+    <string name="some_id">인기있는 소셜링1 (추천)</string>
+    <string name="some_id2">
+\u00EB\u00B3\u0084 \u00EC\u009E\u0090\u00EB\u009E\u0091\u00EC\u00B2\u0098\u00EB\u009F\u00BC \u00EA\u00B0\u0080\u00EB\u0093\u009D \u00EA\u00B7\u00B8\u00EB\u009F\u00AC\u00EB\u0082\u0098 \u00EC\u009D\u00B4\u00EB\u00A6\u0084\u00EC\u009E\u0090 \u00EC\u009D\u00B4\u00EC\u009B\u0083 \u00EA\u00B1\u00B0\u00EC\u0099\u00B8\u00EB\u008B\u00A4. \u00EB\u00A7\u008E\u00EC\u009D\u0080 \u00EB\u0082\u00B4 \u00EB\u00A6\u00B4\u00EC\u00BC\u0080 \u00EA\u00B1\u00B0\u00EC\u0099\u00B8
+</string>
 
 </resources>
