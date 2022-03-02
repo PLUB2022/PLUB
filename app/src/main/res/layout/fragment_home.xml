@@ -15,96 +15,111 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/ellipse_2"
-                android:layout_width="165px"
-                android:layout_height="165px"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="12px"
-                android:layout_marginEnd="48px"
-                android:background="@drawable/ellipse_2"
-                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/clarity_not"
-                android:layout_width="78px"
-                android:layout_height="78px"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="30px"
-                android:clipToOutline="true"
-                app:layout_constraintEnd_toStartOf="@id/ellipse_2"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginEnd="48px"
-                android:src="@drawable/ic_baseline_add_alert_24"
-                />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp">
 
-            <ImageButton
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/clarity_not"
-                android:layout_marginEnd="36px"
-                android:id="@+id/clarity_sea"
-                android:layout_width="78px"
-                android:layout_height="78px"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="30px"
-                android:clipToOutline="true"
-                android:src="@drawable/ic_baseline_search_24"
+                        <ImageButton
+                            android:id="@+id/ellipse_2"
+                            android:layout_width="165px"
+                            android:layout_height="165px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="12px"
+                            android:layout_marginEnd="48px"
+                            android:background="@drawable/ellipse_2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                />
+                        <ImageButton
+                            android:id="@+id/clarity_not"
+                            android:layout_width="78px"
+                            android:layout_height="78px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="30px"
+                            android:layout_marginEnd="48px"
+                            android:clipToOutline="true"
+                            android:src="@drawable/ic_baseline_add_alert_24"
+                            app:layout_constraintEnd_toStartOf="@id/ellipse_2"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/some_id"
-                android:layout_width="792px"
-                android:layout_height="102px"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="72px"
-                android:layout_marginTop="168px"
-                android:gravity="top"
-                android:text="인기있는 소셜링1 (추천)"
-                android:textAppearance="@style/some_id"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                        <ImageButton
+                            android:id="@+id/clarity_sea"
+                            android:layout_width="78px"
+                            android:layout_height="78px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="30px"
+                            android:layout_marginEnd="36px"
+                            android:clipToOutline="true"
+                            android:src="@drawable/ic_baseline_search_24"
+                            app:layout_constraintEnd_toStartOf="@id/clarity_not"
+                            app:layout_constraintTop_toTopOf="parent"
 
-            <View
-                android:id="@+id/group_8"
-                android:layout_width="40dp"
-                android:layout_height="16dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="24dp"
-                app:layout_constraintTop_toBottomOf="@id/some_id"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="4dp"
-                android:background="#00000000"
-                />
+                            />
 
-            <TextView
-                android:id="@+id/some_id2"
-                android:layout_width="146dp"
-                android:layout_height="74dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="24dp"
-                android:layout_alignParentTop="true"
-                app:layout_constraintTop_toBottomOf="@id/group_8"
-                app:layout_constraintStart_toStartOf="parent"
-                android:text="별 자랑처럼 가득 그러나 이름자 이웃 거외다. 많은 내 릴케 거외"
-                android:textAppearance="@style/some_id2"
-                android:lineSpacingExtra="5sp"
-                android:gravity="center_vertical"
-                />
+                        <TextView
+                            android:id="@+id/some_id"
+                            android:layout_width="792px"
+                            android:layout_height="102px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="72px"
+                            android:layout_marginTop="168px"
+                            android:gravity="top"
+                            android:text="인기있는 소셜링1 (추천)"
+                            android:textAppearance="@style/some_id"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
+                        <View
+                            android:id="@+id/group_8"
+                            android:layout_width="40dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="4dp"
+                            android:background="#00000000"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/some_id" />
+
+                        <TextView
+                            android:id="@+id/some_id2"
+                            android:layout_width="146dp"
+                            android:layout_height="74dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="5sp"
+                            android:text="별 자랑처럼 가득 그러나 이름자 이웃 거외다. 많은 내 릴케 거외"
+                            android:textAppearance="@style/some_id2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/group_8" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:weightSum="5"
+                android:id="@+id/navbar"
                 app:layout_constraintBottom_toBottomOf="parent">
 
                 <ImageView
