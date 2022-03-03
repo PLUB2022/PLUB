@@ -268,6 +268,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="10dp"
                         app:layout_constraintEnd_toEndOf="parent"
+                        android:scrollbars="none"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/algorithm">
 
@@ -516,10 +517,10 @@
                             android:id="@+id/smallTalkIcon1"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/nowLocate"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nowLocate" />
 
                         <TextView
                             android:id="@+id/smallTalkTitle1"
@@ -527,37 +528,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="편하게 얘기하실 분~"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/smallTalkIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/nowLocate"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/nowLocate" />
 
                         <View
                             android:id="@+id/smallTalkTime1"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1" />
 
                         <ImageView
                             android:id="@+id/smallTalkPeopleIcon1"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkTime1"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkTime1"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1" />
 
                         <TextView
                             android:id="@+id/smallTalkPeople1"
@@ -565,14 +564,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="3/8"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1" />
 
                         <TextView
                             android:id="@+id/smallTalkLocate1"
@@ -580,22 +578,21 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/nowLocate"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="15dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 3km"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nowLocate" />
 
                         <ImageView
                             android:id="@+id/smallTalkIcon2"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon1"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon1" />
 
                         <TextView
                             android:id="@+id/smallTalkTitle2"
@@ -603,37 +600,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="같이 등산가요!!"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/smallTalkIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon1"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon1" />
 
                         <View
                             android:id="@+id/smallTalkTime2"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2" />
 
                         <ImageView
                             android:id="@+id/smallTalkPeopleIcon2"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkTime2"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkTime2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2" />
 
                         <TextView
                             android:id="@+id/smallTalkPeople2"
@@ -641,14 +636,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="10/16"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2" />
 
                         <TextView
                             android:id="@+id/smallTalkLocate2"
@@ -656,22 +650,21 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkLocate1"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="36dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 5km"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkLocate1" />
 
                         <ImageView
                             android:id="@+id/smallTalkIcon3"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon2"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon2" />
 
                         <TextView
                             android:id="@+id/smallTalkTitle3"
@@ -679,37 +672,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="Study with ME!!"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/smallTalkIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon2"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon2" />
 
                         <View
                             android:id="@+id/smallTalkTime3"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3" />
 
                         <ImageView
                             android:id="@+id/smallTalkPeopleIcon3"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkTime3"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkTime3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3" />
 
                         <TextView
                             android:id="@+id/smallTalkPeople3"
@@ -717,14 +708,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="3/4"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3" />
 
                         <TextView
                             android:id="@+id/smallTalkLocate3"
@@ -732,14 +722,12 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/smallTalkLocate2"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="36dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 230m"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
-
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkLocate2" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -772,10 +760,10 @@
                             android:id="@+id/newsmallTalkIcon1"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/newSocialText"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newSocialText" />
 
                         <TextView
                             android:id="@+id/newsmallTalkTitle1"
@@ -783,37 +771,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="Study with ME!!"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/newSocialText"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/newSocialText" />
 
                         <View
                             android:id="@+id/newsmallTalkTime1"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1" />
 
                         <ImageView
                             android:id="@+id/newsmallTalkPeopleIcon1"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime1"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime1"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1" />
 
                         <TextView
                             android:id="@+id/newsmallTalkPeople1"
@@ -821,14 +807,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="1/4"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1" />
 
                         <TextView
                             android:id="@+id/newsmallTalkLocate1"
@@ -836,22 +821,21 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/newSocialText"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="15dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 230m"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newSocialText" />
 
                         <ImageView
                             android:id="@+id/newsmallTalkIcon2"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon1"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon1" />
 
                         <TextView
                             android:id="@+id/newsmallTalkTitle2"
@@ -859,37 +843,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="편하게 얘기하실분~"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon1"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon1" />
 
                         <View
                             android:id="@+id/newsmallTalkTime2"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2" />
 
                         <ImageView
                             android:id="@+id/newsmallTalkPeopleIcon2"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime2"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2" />
 
                         <TextView
                             android:id="@+id/newsmallTalkPeople2"
@@ -897,14 +879,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="1/8"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2" />
 
                         <TextView
                             android:id="@+id/newsmallTalkLocate2"
@@ -912,22 +893,21 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkLocate1"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="36dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 3km"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkLocate1" />
 
                         <ImageView
                             android:id="@+id/newsmallTalkIcon3"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon2"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon2" />
 
                         <TextView
                             android:id="@+id/newsmallTalkTitle3"
@@ -935,37 +915,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="같이 등산가요!!"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon2"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon2" />
 
                         <View
                             android:id="@+id/newsmallTalkTime3"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3" />
 
                         <ImageView
                             android:id="@+id/newsmallTalkPeopleIcon3"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime3"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3" />
 
                         <TextView
                             android:id="@+id/newsmallTalkPeople3"
@@ -973,14 +951,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="1/16"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3" />
 
                         <TextView
                             android:id="@+id/newsmallTalkLocate3"
@@ -988,14 +965,12 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkLocate2"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="36dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 5km"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
-
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkLocate2" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -1028,10 +1003,10 @@
                             android:id="@+id/endsmallTalkIcon1"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/endSocialText"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endSocialText" />
 
                         <TextView
                             android:id="@+id/endsmallTalkTitle1"
@@ -1039,37 +1014,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="Study with ME!!"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/endSocialText"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/endSocialText" />
 
                         <View
                             android:id="@+id/endsmallTalkTime1"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1" />
 
                         <ImageView
                             android:id="@+id/endsmallTalkPeopleIcon1"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime1"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime1"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1" />
 
                         <TextView
                             android:id="@+id/endsmallTalkPeople1"
@@ -1077,14 +1050,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon1"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="3/4"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1" />
 
                         <TextView
                             android:id="@+id/endsmallTalkLocate1"
@@ -1092,22 +1064,21 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/endSocialText"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="15dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 230m"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endSocialText" />
 
                         <ImageView
                             android:id="@+id/endsmallTalkIcon2"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon1"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon1" />
 
                         <TextView
                             android:id="@+id/endsmallTalkTitle2"
@@ -1115,37 +1086,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="편하게 얘기하실분~"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon1"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon1" />
 
                         <View
                             android:id="@+id/endsmallTalkTime2"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2" />
 
                         <ImageView
                             android:id="@+id/endsmallTalkPeopleIcon2"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime2"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2" />
 
                         <TextView
                             android:id="@+id/endsmallTalkPeople2"
@@ -1153,14 +1122,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon2"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="7/8"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2" />
 
                         <TextView
                             android:id="@+id/endsmallTalkLocate2"
@@ -1168,22 +1136,21 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkLocate1"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="36dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 3km"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkLocate1" />
 
                         <ImageView
                             android:id="@+id/endsmallTalkIcon3"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon2"
-                            app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginTop="10dp"
-                            android:src="@color/lightgray"/>
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon2" />
 
                         <TextView
                             android:id="@+id/endsmallTalkTitle3"
@@ -1191,37 +1158,35 @@
                             android:layout_height="17dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
                             android:text="같이 등산가요!!"
                             android:textAppearance="@style/smallTalkTitle"
                             app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon2"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginStart="10dp"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon2" />
 
                         <View
                             android:id="@+id/endsmallTalkTime3"
                             android:layout_width="68dp"
                             android:layout_height="16dp"
                             android:layout_alignParentLeft="true"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3"
+                            android:layout_alignParentTop="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="3dp"
-                            android:layout_alignParentTop="true"
                             android:background="@color/lightgray"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3" />
 
                         <ImageView
                             android:id="@+id/endsmallTalkPeopleIcon3"
                             android:layout_width="14dp"
                             android:layout_height="14dp"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime3"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@color/black"/>
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3" />
 
                         <TextView
                             android:id="@+id/endsmallTalkPeople3"
@@ -1229,14 +1194,13 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon3"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3"
-                            android:layout_marginTop="4dp"
                             android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
                             android:text="15/16"
                             android:textAppearance="@style/smallTalkPeople"
-                            android:gravity="top"
-                            />
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3" />
 
                         <TextView
                             android:id="@+id/endsmallTalkLocate3"
@@ -1244,14 +1208,12 @@
                             android:layout_height="14dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
-                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkLocate2"
-                            app:layout_constraintEnd_toEndOf="parent"
                             android:layout_marginTop="36dp"
+                            android:gravity="right|top"
                             android:text="방학1동 | 5km"
                             android:textAppearance="@style/km"
-                            android:gravity="right|top"
-                            />
-
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkLocate2" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
