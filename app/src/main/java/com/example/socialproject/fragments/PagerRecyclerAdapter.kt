@@ -9,29 +9,30 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.socialproject.R
 
-class PagerRecyclerAdapter(private val bgColors: ArrayList<Int>) : RecyclerView.Adapter<PagerRecyclerAdapter.PagerViewHolder>() {
+class PagerRecyclerAdapter(private val Title: ArrayList<String>, private val Content : ArrayList<String>) : RecyclerView.Adapter<PagerRecyclerAdapter.PagerViewHolder>() {
 
     inner class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val pageName: TextView = itemView.findViewById(R.id.pageName)
+        private val titleName: TextView = itemView.findViewById(R.id.title_id)
+        private val contentC : TextView = itemView.findViewById(R.id.content_id)
 
-        fun bind(@ColorRes bgColor: Int, position: Int) {
-            pageName.text = "Page ${position+1}"
-            pageName.setBackgroundColor(ContextCompat.getColor(pageName.context, bgColor))
+        fun bind(title : String, content : String, position: Int) {
+            titleName.text = title
+            contentC.text = content
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_view,
+            R.layout.titleslider1,
             parent,
             false
         )
         return PagerViewHolder(view)
     }
     override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
-        holder.bind(bgColors[position], position)
+        holder.bind(Title[position], Content[position], position)
     }
 
-    override fun getItemCount(): Int = bgColors.size
+    override fun getItemCount(): Int = Title.size
 }

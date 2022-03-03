@@ -29,16 +29,22 @@ class HomeFragment : Fragment() {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
-        var bgColors = arrayListOf<Int>(
-            R.color.black,
-            R.color.white,
-            R.color.purple_200,
-            R.color.lightgray,
-            R.color.teal_200
+        var titleList = arrayListOf<String>(
+            "인기있는 소셜링1 (추천)",
+            "인기있는 소셜링2 (비추)",
+            "테스트용 소셜링3 (추천)",
+            "진짜 테스트!"
+        )
+
+        var contentList = arrayListOf<String>(
+            "별 자랑처럼 가득 그러나 이름자 이웃 거외다. 많은 내 릴케 거외",
+            "인기있는 소셜링2 (비추)",
+            "테스트용 소셜링3 (추천)",
+            "진짜 테스트!"
         )
 
         // RecyclerView.Adapter<ViewHolder>()
-        binding.titleViewPager.adapter = PagerRecyclerAdapter(bgColors)
+        binding.titleViewPager.adapter = PagerRecyclerAdapter(titleList, contentList)
         // ViewPager의 Paging 방향은 Horizontal
         binding.titleViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 

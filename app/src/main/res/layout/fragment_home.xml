@@ -63,6 +63,17 @@
 
                         />
 
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="234.14dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/titleViewPager"
+                        app:layout_constraintTop_toBottomOf="@id/ellipse_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="1dp"
+                        app:layout_constraintEnd_toEndOf="parent">
+                    </androidx.viewpager2.widget.ViewPager2>
+
                     <View
                         android:id="@+id/some_id3"
                         android:layout_width="312dp"
@@ -79,16 +90,7 @@
                         />
 
 
-                    <androidx.viewpager2.widget.ViewPager2
-                        android:layout_width="match_parent"
-                        android:layout_height="234.14dp"
-                        android:orientation="horizontal"
-                        android:id="@+id/titleViewPager"
-                        app:layout_constraintTop_toBottomOf="@id/ellipse_2"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginTop="1dp"
-                        app:layout_constraintEnd_toEndOf="parent">
-                    </androidx.viewpager2.widget.ViewPager2>
+
 
 
 

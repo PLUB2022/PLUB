@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/some_id"
+        android:id="@+id/title_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -28,10 +28,10 @@
         android:text="가드닝"
         android:background="@color/lightgray"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/some_id" />
+        app:layout_constraintTop_toBottomOf="@id/title_id" />
 
     <TextView
-        android:id="@+id/some_id2"
+        android:id="@+id/content_id"
         android:layout_width="146dp"
         android:layout_height="74dp"
         android:layout_alignParentLeft="true"
@@ -55,7 +55,7 @@
         android:src="@color/lightgray"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/some_id" />
+        app:layout_constraintTop_toBottomOf="@id/title_id" />
 
 
 
