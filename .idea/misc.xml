@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/border_layout.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_not.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_sea.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_1.xml" value="0.215625" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_add_alert_24.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_4.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.215625" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_login.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />

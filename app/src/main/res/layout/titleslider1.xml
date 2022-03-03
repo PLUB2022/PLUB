@@ -51,8 +51,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
-        android:background="#00000000"
-        android:src="@color/lightgray"
+        android:src="@color/black"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_id" />
