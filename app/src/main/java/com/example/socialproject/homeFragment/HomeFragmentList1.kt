@@ -1,23 +1,19 @@
-package com.example.socialproject.fragments
+package com.example.socialproject.homeFragment
 
-import android.graphics.Color.red
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
-import com.example.socialproject.databinding.FragmentHomeBinding
+import com.example.socialproject.databinding.FragmentHomeList1Binding
 
-class HomeFragment : Fragment() {
+class HomeFragmentList1 : Fragment() {
 
-    private lateinit var binding : FragmentHomeBinding
-
+    private lateinit var binding : FragmentHomeList1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -26,6 +22,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Inflate the layout for this fragment
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
@@ -67,24 +64,7 @@ class HomeFragment : Fragment() {
             }
         })
 
-
-        binding.socialTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_socialFragment)
-        }
-
-        binding.clubAddTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_clubFragment)
-        }
-
-        binding.feedTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_feedFragment)
-        }
-
-        binding.profileTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
-        }
-
-        return binding.root
+        return inflater.inflate(R.layout.fragment_home_list1, container, false)
     }
 
 }

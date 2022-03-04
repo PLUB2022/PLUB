@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".mainFragments.HomeFragment">
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageButton
+                        android:id="@+id/ellipse_2"
+                        android:layout_width="165px"
+                        android:layout_height="165px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12px"
+                        android:layout_marginEnd="48px"
+                        android:background="@drawable/ellipse_2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/clarity_not"
+                        android:layout_width="78px"
+                        android:layout_height="78px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30px"
+                        android:layout_marginEnd="48px"
+                        android:clipToOutline="true"
+                        android:src="@drawable/ic_baseline_add_alert_24"
+                        app:layout_constraintEnd_toStartOf="@id/ellipse_2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/clarity_sea"
+                        android:layout_width="78px"
+                        android:layout_height="78px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30px"
+                        android:layout_marginEnd="36px"
+                        android:clipToOutline="true"
+                        android:src="@drawable/ic_baseline_search_24"
+                        app:layout_constraintEnd_toStartOf="@id/clarity_not"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        />
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/titleViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="234.14dp"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ellipse_2"></androidx.viewpager2.widget.ViewPager2>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/socialHostTop"
+                        android:layout_width="312dp"
+                        android:layout_height="206dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="229dp"
+                        android:layout_marginEnd="23dp"
+                        android:background="#E6ffffff"
+                        android:elevation="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="9dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="5sp"
+                            android:text="추천 소셜링 인기 호스트 TOP"
+                            android:textAppearance="@style/top"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/moresee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="17dp"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3sp"
+                            android:text="+ 더보기"
+                            android:textAppearance="@style/moresee"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/hostIcon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ellipse_1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/top" />
+
+                        <TextView
+                            android:id="@+id/hostId1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="47dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="4sp"
+                            android:text="김아무개"
+                            android:textAppearance="@style/hostid"
+                            app:layout_constraintStart_toEndOf="@id/hostIcon1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/hostTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="4sp"
+                            android:text="자라나라 머리머리;; 아 이게 아닌가.."
+                            android:textAppearance="@style/hosttitle"
+                            app:layout_constraintStart_toEndOf="@id/hostIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/hostId1" />
+
+                        <ImageView
+                            android:id="@+id/hostIcon2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@drawable/ellipse_1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/hostIcon1" />
+
+                        <TextView
+                            android:id="@+id/hostId2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="4sp"
+                            android:text="김아무개"
+                            android:textAppearance="@style/hostid"
+                            app:layout_constraintStart_toEndOf="@id/hostIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/hostTitle1" />
+
+                        <TextView
+                            android:id="@+id/hostTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="4sp"
+                            android:text="자라나라 머리머리;; 아 이게 아닌가.."
+                            android:textAppearance="@style/hosttitle"
+                            app:layout_constraintStart_toEndOf="@id/hostIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/hostId2" />
+
+                        <ImageView
+                            android:id="@+id/hostIcon3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@drawable/ellipse_1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/hostIcon2" />
+
+                        <TextView
+                            android:id="@+id/hostId3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="4sp"
+                            android:text="김아무개"
+                            android:textAppearance="@style/hostid"
+                            app:layout_constraintStart_toEndOf="@id/hostIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/hostTitle2" />
+
+                        <TextView
+                            android:id="@+id/hostTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="4sp"
+                            android:text="자라나라 머리머리;; 아 이게 아닌가.."
+                            android:textAppearance="@style/hosttitle"
+                            app:layout_constraintStart_toEndOf="@id/hostIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/hostId3" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/algorithm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="top"
+                        android:text="알고리즘 추천 소셜링"
+                        android:textAppearance="@style/algorithm"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/socialHostTop" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/algorithm_image_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="176dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:scrollbars="none"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/algorithm">
+
+                        <LinearLayout
+                            android:id="@+id/algorithm_image_scroll_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/al_rec1"
+                                android:layout_width="126dp"
+                                android:layout_height="176dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/rectangle_2">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/hangang1"
+                                    android:layout_width="106dp"
+                                    android:layout_height="44dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="top"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="한강 야간 러닝 크루 드루와!"
+                                    android:textAppearance="@style/hangang"
+                                    android:translationY="-1.5sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/al_rec2"
+                                android:layout_width="126dp"
+                                android:layout_height="176dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/rectangle_2">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/hangang2"
+                                    android:layout_width="106dp"
+                                    android:layout_height="44dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="top"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="한강 야간 러닝 크루 드루와!"
+                                    android:textAppearance="@style/hangang"
+                                    android:translationY="-1.5sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/al_rec3"
+                                android:layout_width="126dp"
+                                android:layout_height="176dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/rectangle_2">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/hangang3"
+                                    android:layout_width="106dp"
+                                    android:layout_height="44dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="top"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="한강 야간 러닝 크루 드루와!"
+                                    android:textAppearance="@style/hangang"
+                                    android:translationY="-1.5sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/al_rec4"
+                                android:layout_width="126dp"
+                                android:layout_height="176dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/rectangle_2">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/hangang4"
+                                    android:layout_width="106dp"
+                                    android:layout_height="44dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="top"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="한강 야간 러닝 크루 드루와!"
+                                    android:textAppearance="@style/hangang"
+                                    android:translationY="-1.5sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/al_rec5"
+                                android:layout_width="126dp"
+                                android:layout_height="176dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/rectangle_2">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/hangang5"
+                                    android:layout_width="106dp"
+                                    android:layout_height="44dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="top"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="한강 야간 러닝 크루 드루와!"
+                                    android:textAppearance="@style/hangang"
+                                    android:translationY="-1.5sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/social_locate"
+                        android:layout_width="312dp"
+                        android:layout_height="203dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#00000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/algorithm_image_scroll">
+
+                        <TextView
+                            android:id="@+id/closeSocialText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="top"
+                            android:text="주변에서 열린 소셜링"
+                            android:textAppearance="@style/closeSocialtitle"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/nowLocateIcon"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/closeSocialText" />
+
+                        <TextView
+                            android:id="@+id/nowLocate"
+                            android:layout_width="158dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="top"
+                            android:text="현재 위치 : 서울시 도봉구 방학1동"
+                            android:textAppearance="@style/nowLocate"
+                            app:layout_constraintStart_toEndOf="@id/nowLocateIcon"
+                            app:layout_constraintTop_toBottomOf="@id/closeSocialText" />
+
+                        <ImageView
+                            android:id="@+id/smallTalkIcon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nowLocate" />
+
+                        <TextView
+                            android:id="@+id/smallTalkTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="편하게 얘기하실 분~"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/nowLocate" />
+
+                        <View
+                            android:id="@+id/smallTalkTime1"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1" />
+
+                        <ImageView
+                            android:id="@+id/smallTalkPeopleIcon1"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkTime1"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1" />
+
+                        <TextView
+                            android:id="@+id/smallTalkPeople1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="3/8"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle1" />
+
+                        <TextView
+                            android:id="@+id/smallTalkLocate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 3km"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/nowLocate" />
+
+                        <ImageView
+                            android:id="@+id/smallTalkIcon2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon1" />
+
+                        <TextView
+                            android:id="@+id/smallTalkTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="같이 등산가요!!"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon1" />
+
+                        <View
+                            android:id="@+id/smallTalkTime2"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2" />
+
+                        <ImageView
+                            android:id="@+id/smallTalkPeopleIcon2"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkTime2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2" />
+
+                        <TextView
+                            android:id="@+id/smallTalkPeople2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="10/16"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle2" />
+
+                        <TextView
+                            android:id="@+id/smallTalkLocate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="36dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 5km"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkLocate1" />
+
+                        <ImageView
+                            android:id="@+id/smallTalkIcon3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon2" />
+
+                        <TextView
+                            android:id="@+id/smallTalkTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="Study with ME!!"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkIcon2" />
+
+                        <View
+                            android:id="@+id/smallTalkTime3"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3" />
+
+                        <ImageView
+                            android:id="@+id/smallTalkPeopleIcon3"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkTime3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3" />
+
+                        <TextView
+                            android:id="@+id/smallTalkPeople3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="3/4"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/smallTalkPeopleIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkTitle3" />
+
+                        <TextView
+                            android:id="@+id/smallTalkLocate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="36dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 230m"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/smallTalkLocate2" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/social_new"
+                        android:layout_width="312dp"
+                        android:layout_height="203dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#00000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/social_locate">
+
+                        <TextView
+                            android:id="@+id/newSocialText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="top"
+                            android:text="신규 OPEN 소셜링"
+                            android:textAppearance="@style/closeSocialtitle"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/newsmallTalkIcon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newSocialText" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="Study with ME!!"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/newSocialText" />
+
+                        <View
+                            android:id="@+id/newsmallTalkTime1"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1" />
+
+                        <ImageView
+                            android:id="@+id/newsmallTalkPeopleIcon1"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime1"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkPeople1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="1/4"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle1" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkLocate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 230m"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newSocialText" />
+
+                        <ImageView
+                            android:id="@+id/newsmallTalkIcon2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon1" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="편하게 얘기하실분~"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon1" />
+
+                        <View
+                            android:id="@+id/newsmallTalkTime2"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2" />
+
+                        <ImageView
+                            android:id="@+id/newsmallTalkPeopleIcon2"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkPeople2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="1/8"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle2" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkLocate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="36dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 3km"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkLocate1" />
+
+                        <ImageView
+                            android:id="@+id/newsmallTalkIcon3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon2" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="같이 등산가요!!"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkIcon2" />
+
+                        <View
+                            android:id="@+id/newsmallTalkTime3"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3" />
+
+                        <ImageView
+                            android:id="@+id/newsmallTalkPeopleIcon3"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkTime3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkPeople3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="1/16"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/newsmallTalkPeopleIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkTitle3" />
+
+                        <TextView
+                            android:id="@+id/newsmallTalkLocate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="36dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 5km"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newsmallTalkLocate2" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/social_end"
+                        android:layout_width="312dp"
+                        android:layout_height="203dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#00000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/social_new">
+
+                        <TextView
+                            android:id="@+id/endSocialText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="top"
+                            android:text="마감 임박 소셜링"
+                            android:textAppearance="@style/closeSocialtitle"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/endsmallTalkIcon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endSocialText" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="Study with ME!!"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/endSocialText" />
+
+                        <View
+                            android:id="@+id/endsmallTalkTime1"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1" />
+
+                        <ImageView
+                            android:id="@+id/endsmallTalkPeopleIcon1"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime1"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkPeople1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="3/4"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon1"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle1" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkLocate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 230m"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endSocialText" />
+
+                        <ImageView
+                            android:id="@+id/endsmallTalkIcon2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon1" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="편하게 얘기하실분~"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon1" />
+
+                        <View
+                            android:id="@+id/endsmallTalkTime2"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2" />
+
+                        <ImageView
+                            android:id="@+id/endsmallTalkPeopleIcon2"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkPeople2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="7/8"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon2"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle2" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkLocate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="36dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 3km"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkLocate1" />
+
+                        <ImageView
+                            android:id="@+id/endsmallTalkIcon3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@color/lightgray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon2" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="12dp"
+                            android:gravity="top"
+                            android:text="같이 등산가요!!"
+                            android:textAppearance="@style/smallTalkTitle"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkIcon2" />
+
+                        <View
+                            android:id="@+id/endsmallTalkTime3"
+                            android:layout_width="68dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/lightgray"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3" />
+
+                        <ImageView
+                            android:id="@+id/endsmallTalkPeopleIcon3"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@color/black"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkTime3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkPeople3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="top"
+                            android:text="15/16"
+                            android:textAppearance="@style/smallTalkPeople"
+                            app:layout_constraintStart_toEndOf="@id/endsmallTalkPeopleIcon3"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkTitle3" />
+
+                        <TextView
+                            android:id="@+id/endsmallTalkLocate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="36dp"
+                            android:gravity="right|top"
+                            android:text="방학1동 | 5km"
+                            android:textAppearance="@style/km"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/endsmallTalkLocate2" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/navbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:weightSum="5"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/homeClubTap"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/ic_baseline_home_24" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/socialTap"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/ic_baseline_people_24" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/clubAddTap"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/ic_baseline_add_24" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/feedTap"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/ic_baseline_sms_24" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/profileTap"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/ic_baseline_account_circle_24" />-->
+
+<!--            </LinearLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>
