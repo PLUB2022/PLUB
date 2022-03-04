@@ -1,4 +1,4 @@
-package com.example.socialproject.fragments
+package com.example.socialproject.mainFragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +8,12 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.socialproject.R
-import com.example.socialproject.databinding.FragmentClubBinding
+import com.example.socialproject.databinding.FragmentSocialBinding
 
-class ClubFragment : Fragment() {
 
-    private lateinit var binding : FragmentClubBinding
+class SocialFragment : Fragment() {
+
+    private lateinit var binding : FragmentSocialBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,24 +24,23 @@ class ClubFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_club, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_social, container, false)
 
         binding.homeClubTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_clubFragment_to_homeFragment)
+            it.findNavController().navigate(R.id.action_socialFragment_to_homeFragment)
         }
 
-        binding.socialTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_clubFragment_to_socialFragment)
+        binding.clubAddTap.setOnClickListener {
+            it.findNavController().navigate(R.id.action_socialFragment_to_clubFragment)
         }
 
         binding.feedTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_clubFragment_to_feedFragment)
+            it.findNavController().navigate(R.id.action_socialFragment_to_feedFragment)
         }
 
         binding.profileTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_clubFragment_to_profileFragment)
+            it.findNavController().navigate(R.id.action_socialFragment_to_profileFragment)
         }
-
 
         return binding.root
     }
