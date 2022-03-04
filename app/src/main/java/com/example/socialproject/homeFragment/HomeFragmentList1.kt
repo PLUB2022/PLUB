@@ -63,7 +63,8 @@ class HomeFragmentList1 : Fragment() {
             }
         })
 
-        return inflater.inflate(R.layout.fragment_home_list1, container, false)
+        return binding.root
+        //return inflater.inflate(R.layout.fragment_home_list1, container, false)
     }
 
 }
