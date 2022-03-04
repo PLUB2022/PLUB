@@ -10,6 +10,7 @@ import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 import com.example.socialproject.databinding.FragmentHomeBinding
+import com.example.socialproject.homeFragment.PostFragmentStateAdapter
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -46,6 +47,38 @@ class HomeFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    // 새로 그리는 부분
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val appbar = view.findViewById<AppBarLayout>(R.id.appbar)
+        val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
+        val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
+
+        viewPager2.adapter =
+            PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
+
+        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
+            tab.text = "Tab $position"
+        }.attach()
+
+        var previous = false
+        var collapsed = false
+
+        appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
+
+
+            if (previous != collapsed) {
+//                updateToolbarIconsOnScrollChange(toolbar, collapsed)
+                previous = collapsed
+
+            }
+        })
+
+//        updateToolbarIconsOnScrollChange(toolbar, collapsed)
+
     }
 
 }
