@@ -60,6 +60,9 @@ class HomeFragment : Fragment() {
         viewPager2.adapter =
             PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
 
+        //스와이프 막기
+        viewPager2.isUserInputEnabled = false
+
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             tab.text = "Tab $position"
         }.attach()

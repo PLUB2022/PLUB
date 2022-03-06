@@ -62,9 +62,6 @@ class HomeFragmentList1 : Fragment() {
                 Log.d("ViewPagerFragment", "Page ${position+1}")
             }
         })
-
         return binding.root
-        //return inflater.inflate(R.layout.fragment_home_list1, container, false)
     }
-
 }
