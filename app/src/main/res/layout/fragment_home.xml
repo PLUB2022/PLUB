@@ -29,6 +29,25 @@
                     android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
                     app:liftOnScroll="true">
 
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsingToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:fitsSystemWindows="true"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:theme="@style/ThemeOverlay.MaterialComponents"
+                            app:layout_collapseMode="pin"
+                            app:navigationIcon="@drawable/ic_baseline_home_24" />
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
