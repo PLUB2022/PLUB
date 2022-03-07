@@ -35,7 +35,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="95dp"
                         android:fitsSystemWindows="true"
-                        app:layout_scrollFlags="scroll|snap|enterAlways"
+                        app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
                         />
 
                     <com.google.android.material.tabs.TabLayout

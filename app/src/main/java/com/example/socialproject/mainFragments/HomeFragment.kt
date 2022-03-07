@@ -2,6 +2,7 @@ package com.example.socialproject.mainFragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -18,10 +19,11 @@ import com.example.socialproject.homeFragment.PostFragmentStateAdapter
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import java.lang.Math.abs
 
 class HomeFragment : Fragment() {
 
-    private lateinit var binding : FragmentHomeBinding
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +32,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
 
 
@@ -66,8 +68,20 @@ class HomeFragment : Fragment() {
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
 
-        val activity : AppCompatActivity = getActivity() as AppCompatActivity
+        val activity: AppCompatActivity = getActivity() as AppCompatActivity
         activity.setSupportActionBar(topbar)
+
+
+        appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
+
+            when {
+                //  State Expanded
+                verticalOffset == 0 -> Log.d("tob", "확장됨")//  Do anything for Expanded State
+                //  State Collapsed
+                abs(verticalOffset) >= appBarLayout.totalScrollRange -> Log.d("tob",
+                    "축소")//  Do anything for Collapse State
+            }
+        })
 
         viewPager2.adapter =
             PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
