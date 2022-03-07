@@ -38,7 +38,21 @@
                         android:text="소셜링"
                         android:background="@color/top_tab_back_color"
                         app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
-                        />
+                        >
+
+                        <TextView
+                            android:id="@+id/toptitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:text="소셜링"
+                            android:textAppearance="@style/toptitle"
+                            android:gravity="center_vertical"
+                            />
+                    </androidx.appcompat.widget.Toolbar>
 
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"

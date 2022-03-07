@@ -70,6 +70,7 @@ class HomeFragment : Fragment() {
 
         val activity: AppCompatActivity = getActivity() as AppCompatActivity
         activity.setSupportActionBar(topbar)
+        activity.supportActionBar?.setTitle("")
 
 
         appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
