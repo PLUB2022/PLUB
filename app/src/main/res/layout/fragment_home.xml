@@ -21,6 +21,7 @@
                 android:layout_marginBottom="60dp">
 
 
+
                 <com.google.android.material.appbar.AppBarLayout
                     android:id="@+id/appbar"
                     android:layout_width="match_parent"
@@ -29,11 +30,18 @@
                     android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
                     app:liftOnScroll="true">
 
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/topbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        />
+
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
-                        android:background="@android:color/transparent"
+                        android:background="@color/top_tab_back_color"
                         app:tabIconTint="#F57C00"
                         app:tabIndicatorColor="#F57C00"
                         app:tabIndicatorHeight="4dp"

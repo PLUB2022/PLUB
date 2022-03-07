@@ -1,12 +1,15 @@
 package com.example.socialproject.mainFragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 import com.example.socialproject.databinding.FragmentHomeBinding
@@ -21,12 +24,14 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
@@ -53,9 +58,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val navController = findNavController()
+
         val appbar = view.findViewById<AppBarLayout>(R.id.appbar)
+        val topbar = view.findViewById<Toolbar>(R.id.topbar)
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
+
+        binding.topbar.setupWithNavController(navController)
 
         viewPager2.adapter =
             PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
