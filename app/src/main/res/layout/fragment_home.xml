@@ -35,13 +35,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="95dp"
                         android:fitsSystemWindows="true"
+                        android:text="소셜링"
+                        android:background="@color/top_tab_back_color"
                         app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
                         />
 
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
+                        android:layout_height="31dp"
                         android:background="@color/top_tab_back_color"
                         app:tabIconTint="#F57C00"
                         app:tabIndicatorColor="#F57C00"
