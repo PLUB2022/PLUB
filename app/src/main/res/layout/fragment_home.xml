@@ -52,11 +52,12 @@
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
-                        android:background="@android:color/transparent"
+
                         app:tabIconTint="#F57C00"
                         app:tabIndicatorColor="#F57C00"
                         app:tabIndicatorHeight="4dp"
                         app:tabMode="scrollable"
+                        app:tabGravity="center"
                         app:tabSelectedTextColor="#F5F5F5"
                         app:tabTextColor="#FFE0B2" />
 

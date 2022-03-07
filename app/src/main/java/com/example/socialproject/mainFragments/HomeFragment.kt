@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -66,6 +67,11 @@ class HomeFragment : Fragment() {
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             tab.text = "Tab $position"
         }.attach()
+
+        for (i in 0..5) {
+            val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null) as TextView
+            binding.tabLayout.getTabAt(i)?.customView = textView
+        }
 
         var previous = false
         var collapsed = false

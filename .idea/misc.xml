@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_1.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_2.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background_selecter.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_club.xml" value="0.2692502532928065" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_feed.xml" value="0.2692502532928065" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home.xml" value="0.2692502532928065" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.2692502532928065" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_profile.xml" value="0.2692502532928065" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_social.xml" value="0.2692502532928065" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title.xml" value="0.375" />
+        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/titleslider1.xml" value="0.375" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/border_layout.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_not.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_sea.xml" value="0.33177083333333335" />
