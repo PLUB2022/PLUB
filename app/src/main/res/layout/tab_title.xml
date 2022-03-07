@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tab_background_selector"
     android:gravity="center"
     android:padding="16dp"
-    android:background="@drawable/tab_background_selecter"
     android:textColor="@color/tab_text_selector"
-    tools:text="Title">
-
-</TextView>
+    tools:text="Title" />

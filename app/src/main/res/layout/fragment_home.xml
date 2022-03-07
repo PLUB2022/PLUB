@@ -53,13 +53,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
 
+                        android:background="@drawable/tab_backgroud"
                         app:tabIconTint="#F57C00"
                         app:tabIndicatorColor="#F57C00"
                         app:tabIndicatorHeight="4dp"
                         app:tabMode="scrollable"
-                        app:tabGravity="center"
-                        app:tabSelectedTextColor="#F5F5F5"
-                        app:tabTextColor="#FFE0B2" />
+                        app:tabGravity="center" />
 
                 </com.google.android.material.appbar.AppBarLayout>
 

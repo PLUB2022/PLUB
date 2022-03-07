@@ -19,6 +19,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 class HomeFragment : Fragment() {
 
     private lateinit var binding : FragmentHomeBinding
+    private val tabTitles = arrayListOf("talking", "enjoying", "learning", "exercising", "relaxing", "creating", "challenging")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,10 +66,10 @@ class HomeFragment : Fragment() {
         viewPager2.isUserInputEnabled = false
 
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
-            tab.text = "Tab $position"
+            tab.text = tabTitles[position]
         }.attach()
 
-        for (i in 0..5) {
+        for (i in 0..7) {
             val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null) as TextView
             binding.tabLayout.getTabAt(i)?.customView = textView
         }
