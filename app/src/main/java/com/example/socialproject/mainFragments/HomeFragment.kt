@@ -3,6 +3,7 @@ package com.example.socialproject.mainFragments
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
@@ -65,7 +66,8 @@ class HomeFragment : Fragment() {
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
 
-        binding.topbar.setupWithNavController(navController)
+        val activity : AppCompatActivity = getActivity() as AppCompatActivity
+        activity.setSupportActionBar(topbar)
 
         viewPager2.adapter =
             PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
