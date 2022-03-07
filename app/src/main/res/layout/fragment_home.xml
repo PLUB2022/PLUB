@@ -54,9 +54,9 @@
                         android:layout_height="?attr/actionBarSize"
 
                         android:background="@drawable/tab_backgroud"
-                        app:tabIconTint="#F57C00"
-                        app:tabIndicatorColor="#F57C00"
-                        app:tabIndicatorHeight="4dp"
+
+                        app:tabIndicatorColor="@color/white"
+                        app:tabIndicatorHeight="0dp"
                         app:tabMode="scrollable"
                         app:tabGravity="center" />
 
