@@ -3,26 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_1.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_2.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_backgroud.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background_selecter.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.375" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/content_fragment_home.xml" value="0.375" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_club.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_feed.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_profile.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_social.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title.xml" value="0.375" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/titleslider1.xml" value="0.375" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/border_layout.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_not.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_sea.xml" value="0.33177083333333335" />
@@ -30,9 +10,17 @@
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_add_alert_24.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21458333333333332" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_2.xml" value="0.209375" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_4.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.215625" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_backgroud.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected_background.xml" value="0.21458333333333332" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test_unselect.xml" value="0.21458333333333332" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test_unselect1.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_login.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
@@ -45,6 +33,8 @@
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_profile.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_social.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/item_view.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title.xml" value="0.1921875" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/test_layout.xml" value="0.196875" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/titleslider1.xml" value="0.271875" />
       </map>
     </option>

@@ -51,14 +51,51 @@
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
-
+                        android:layout_height="match_parent"
                         android:background="@drawable/tab_backgroud"
-
+                        app:tabTextColor="@color/black"
+                        app:tabIndicatorFullWidth="true"
+                        app:tabMaxWidth="0dp"
+                        app:tabGravity="center"
+                        app:tabBackground="@drawable/tab_background_selector"
                         app:tabIndicatorColor="@color/white"
                         app:tabIndicatorHeight="0dp"
-                        app:tabMode="scrollable"
-                        app:tabGravity="center" />
+                        android:textAllCaps="false"
+                        app:tabMode="scrollable" >
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabtalking1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:textAllCaps="false"
+                            android:text="talking"/>
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabtalking2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="talking"/>
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabtalking3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="talking"/>
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabtalking4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="talking"/>
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tabtalking5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="talking"/>
+                    </com.google.android.material.tabs.TabLayout>
 
                 </com.google.android.material.appbar.AppBarLayout>
 

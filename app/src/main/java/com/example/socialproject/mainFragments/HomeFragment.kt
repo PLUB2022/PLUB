@@ -1,11 +1,15 @@
 package com.example.socialproject.mainFragments
 
+import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -13,6 +17,7 @@ import com.example.socialproject.R
 import com.example.socialproject.databinding.FragmentHomeBinding
 import com.example.socialproject.homeFragment.PostFragmentStateAdapter
 import com.google.android.material.appbar.AppBarLayout
+import com.google.android.material.tabs.TabItem
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -58,6 +63,7 @@ class HomeFragment : Fragment() {
         val appbar = view.findViewById<AppBarLayout>(R.id.appbar)
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
+        val tab1 = view.findViewById<TabItem>(R.id.tabtalking1)
 
         viewPager2.adapter =
             PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
@@ -65,14 +71,33 @@ class HomeFragment : Fragment() {
         //스와이프 막기
         viewPager2.isUserInputEnabled = false
 
-        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
-            tab.text = tabTitles[position]
-        }.attach()
+//        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
+//            tab.text = tabTitles[position]
+//        }.attach()
+//
+////        for (i in 0..7) {
+////            val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null) as TextView
+////            binding.tabLayout.getTabAt(i)?.customView = textView
+////        }
 
-        for (i in 0..7) {
-            val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null) as TextView
-            binding.tabLayout.getTabAt(i)?.customView = textView
-        }
+        tabLayout.setTabTextColors(Color.WHITE, Color.BLACK)
+
+        tabLayout.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener {
+            override fun onTabReselected(tab: TabLayout.Tab?) { }
+            override fun onTabUnselected(tab: TabLayout.Tab?) { }
+            @SuppressLint("ResourceAsColor")
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                when (tab!!.position) {
+                    0 -> Log.d("tag", "텝1")
+                    1 -> {
+                        val textView = LayoutInflater.from(requireContext()).inflate(R.layout.test_layout, null) as ConstraintLayout
+                        tabLayout.getTabAt(0)?.customView = textView
+                        ChangeAni(1, tabLayout)
+                    }
+                }
+            }
+        })
+
 
         var previous = false
         var collapsed = false
@@ -88,6 +113,23 @@ class HomeFragment : Fragment() {
         })
 
 //        updateToolbarIconsOnScrollChange(toolbar, collapsed)
+
+    }
+
+    @SuppressLint("ResourceAsColor")
+    public fun ChangeAni(pos : Int, tab : TabLayout){
+        if(pos == 0){
+            tab.getTabAt(1)?.view?.setBackgroundResource(R.drawable.test_unselect1)
+        }
+        else if(pos == 5){
+            tab.getTabAt(4)?.view?.setBackgroundResource(R.drawable.test_unselect)
+        }
+        else{
+            tab.getTabAt(pos - 1)?.view?.setBackgroundColor(R.color.white)
+            tab.getTabAt(pos - 1)?.view?.setBackgroundResource(R.drawable.test_unselect)
+
+            tab.getTabAt(pos + 1)?.view?.setBackgroundResource(R.drawable.test_unselect1)
+        }
 
     }
 
