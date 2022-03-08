@@ -88,11 +88,21 @@ class HomeFragment : Fragment() {
             @SuppressLint("ResourceAsColor")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 when (tab!!.position) {
-                    0 -> Log.d("tag", "텝1")
+                    0 -> ChangeAni(0, tabLayout)
                     1 -> {
-                        val textView = LayoutInflater.from(requireContext()).inflate(R.layout.test_layout, null) as ConstraintLayout
-                        tabLayout.getTabAt(0)?.customView = textView
                         ChangeAni(1, tabLayout)
+                    }
+                    2 -> {
+                        ChangeAni(2, tabLayout)
+                    }
+                    3 -> {
+                        ChangeAni(3, tabLayout)
+                    }
+                    4 -> {
+                        ChangeAni(4, tabLayout)
+                    }
+                    5 -> {
+                        ChangeAni(5, tabLayout)
                     }
                 }
             }
@@ -118,6 +128,10 @@ class HomeFragment : Fragment() {
 
     @SuppressLint("ResourceAsColor")
     public fun ChangeAni(pos : Int, tab : TabLayout){
+        for(i in 0.. 5){
+            tab.getTabAt(i)?.view?.setBackgroundResource(R.drawable.test_tab_basic)
+        }
+        tab.getTabAt(pos)?.view?.setBackgroundResource(R.drawable.tab_selected_background)
         if(pos == 0){
             tab.getTabAt(1)?.view?.setBackgroundResource(R.drawable.test_unselect1)
         }
@@ -125,9 +139,7 @@ class HomeFragment : Fragment() {
             tab.getTabAt(4)?.view?.setBackgroundResource(R.drawable.test_unselect)
         }
         else{
-            tab.getTabAt(pos - 1)?.view?.setBackgroundColor(R.color.white)
             tab.getTabAt(pos - 1)?.view?.setBackgroundResource(R.drawable.test_unselect)
-
             tab.getTabAt(pos + 1)?.view?.setBackgroundResource(R.drawable.test_unselect1)
         }
 
