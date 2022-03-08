@@ -53,6 +53,10 @@ class HomeFragment : Fragment() {
             it.findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
         }
 
+
+        // 처음 Fragment 그릴 시 적용
+        binding.tabLayout.getTabAt(1)?.view?.setBackgroundResource(R.drawable.test_unselect1)
+
         return binding.root
     }
 
@@ -71,9 +75,11 @@ class HomeFragment : Fragment() {
         //스와이프 막기
         viewPager2.isUserInputEnabled = false
 
-//        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
-//            tab.text = tabTitles[position]
-//        }.attach()
+
+        // Tablayout에 문자 추가
+        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
+            tab.text = tabTitles[position]
+        }.attach()
 //
 ////        for (i in 0..7) {
 ////            val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null) as TextView
@@ -104,6 +110,12 @@ class HomeFragment : Fragment() {
                     5 -> {
                         ChangeAni(5, tabLayout)
                     }
+                    6 -> {
+                        ChangeAni(6, tabLayout)
+                    }
+                    7 -> {
+                        ChangeAni(7, tabLayout)
+                    }
                 }
             }
         })
@@ -113,30 +125,26 @@ class HomeFragment : Fragment() {
         var collapsed = false
 
         appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
-
-
             if (previous != collapsed) {
 //                updateToolbarIconsOnScrollChange(toolbar, collapsed)
                 previous = collapsed
-
             }
         })
-
 //        updateToolbarIconsOnScrollChange(toolbar, collapsed)
 
     }
 
     @SuppressLint("ResourceAsColor")
     public fun ChangeAni(pos : Int, tab : TabLayout){
-        for(i in 0.. 5){
+        for(i in 0.. 7){
             tab.getTabAt(i)?.view?.setBackgroundResource(R.drawable.test_tab_basic)
         }
         tab.getTabAt(pos)?.view?.setBackgroundResource(R.drawable.tab_selected_background)
         if(pos == 0){
             tab.getTabAt(1)?.view?.setBackgroundResource(R.drawable.test_unselect1)
         }
-        else if(pos == 5){
-            tab.getTabAt(4)?.view?.setBackgroundResource(R.drawable.test_unselect)
+        else if(pos == 7){
+            tab.getTabAt(6)?.view?.setBackgroundResource(R.drawable.test_unselect)
         }
         else{
             tab.getTabAt(pos - 1)?.view?.setBackgroundResource(R.drawable.test_unselect)
