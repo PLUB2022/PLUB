@@ -38,17 +38,65 @@
                         android:background="@color/top_tab_back_color"
                         app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed">
 
-                        <TextView
-                            android:id="@+id/toptitle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="34dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="24dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginTop="13dp"
-                            android:text="소셜링"
-                            android:textAppearance="@style/toptitle"
-                            android:gravity="center_vertical" />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/toptitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="34dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center_vertical"
+                                android:text="소셜링"
+                                android:textAppearance="@style/toptitle"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_editor_absoluteX="6dp" />
+
+                            <ImageButton
+                                android:id="@+id/ellipse_2"
+                                android:layout_width="165px"
+                                android:layout_height="165px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/ellipse_2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/clarity_not"
+                                android:layout_width="78px"
+                                android:layout_height="78px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                android:clipToOutline="true"
+                                android:src="@drawable/ic_baseline_add_alert_24"
+                                app:layout_constraintEnd_toStartOf="@id/ellipse_2"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/clarity_sea"
+                                android:layout_width="78px"
+                                android:layout_height="78px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                android:clipToOutline="true"
+                                android:src="@drawable/ic_baseline_search_24"
+                                app:layout_constraintEnd_toStartOf="@id/clarity_not"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                     </androidx.appcompat.widget.Toolbar>
 
                     <com.google.android.material.tabs.TabLayout
