@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.marginTop
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -20,11 +21,15 @@ import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabItem
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import java.lang.Math.abs
+import kotlin.properties.Delegates
 
 class HomeFragment : Fragment() {
 
+    private var nowpos : Int = 0
+    private var flag by Delegates.notNull<Boolean>()
     private lateinit var binding : FragmentHomeBinding
-    private val tabTitles = arrayListOf("talking", "enjoying", "learning", "exercising", "relaxing", "creating", "challenging")
+    private val tabTitles = arrayListOf("Talking", "Enjoying", "Learning", "Exercising", "Relaxing", "Creating", "Challenging")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,13 +66,15 @@ class HomeFragment : Fragment() {
     }
 
     // 새로 그리는 부분
+    @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val appbar = view.findViewById<AppBarLayout>(R.id.appbar)
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
-        val tab1 = view.findViewById<TabItem>(R.id.tabtalking1)
+
+        flag = true
 
         viewPager2.adapter =
             PostFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle)
@@ -86,6 +93,7 @@ class HomeFragment : Fragment() {
 ////            binding.tabLayout.getTabAt(i)?.customView = textView
 ////        }
 
+        // 기본 색상, 선택된 색상 설정
         tabLayout.setTabTextColors(Color.WHITE, Color.BLACK)
 
         tabLayout.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener {
@@ -113,42 +121,75 @@ class HomeFragment : Fragment() {
                     6 -> {
                         ChangeAni(6, tabLayout)
                     }
-                    7 -> {
-                        ChangeAni(7, tabLayout)
-                    }
                 }
             }
         })
 
 
-        var previous = false
-        var collapsed = false
+//        var previous = false
+//        var collapsed = false
+//
+//        appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
+//            if (previous != collapsed) {
+////                updateToolbarIconsOnScrollChange(toolbar, collapsed)
+//                previous = collapsed
+//            }
+//        })
+////        updateToolbarIconsOnScrollChange(toolbar, collapsed)
 
         appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
-            if (previous != collapsed) {
-//                updateToolbarIconsOnScrollChange(toolbar, collapsed)
-                previous = collapsed
+
+            when {
+                //  State Expanded
+                verticalOffset == 0 -> {
+                    Log.d("tob", "확장됨")
+                    flag = true
+                    tabLayout.setBackgroundColor(Color.LTGRAY)
+                    tabLayout.setPadding(0,0,0,0)
+                    appbar.elevation = 0.0F
+                    ChangeAni(nowpos, tabLayout)
+
+                }
+                //  State Collapsed
+                abs(verticalOffset) >= appBarLayout.totalScrollRange -> {
+                    Log.d("tob", "축소")
+                    flag = false
+                    tabLayout.setBackgroundColor(Color.WHITE)
+                    tabLayout.setPadding(0,0,0,14)
+                    appbar.elevation = 20.0F
+                    ChangeAni(nowpos, tabLayout)
+                }//  Do anything for Collapse State
             }
         })
-//        updateToolbarIconsOnScrollChange(toolbar, collapsed)
 
     }
 
     @SuppressLint("ResourceAsColor")
     public fun ChangeAni(pos : Int, tab : TabLayout){
-        for(i in 0.. 7){
-            tab.getTabAt(i)?.view?.setBackgroundResource(R.drawable.tab_basic)
-        }
-        tab.getTabAt(pos)?.view?.setBackgroundResource(R.drawable.tab_selected_background)
-        if(pos == 0){
-            tab.getTabAt(1)?.view?.setBackgroundResource(R.drawable.tab_unselected2)
-        }
-        else if(pos == 7){
-            tab.getTabAt(6)?.view?.setBackgroundResource(R.drawable.tab_unselected)
+        nowpos = pos
+        if(flag){
+            tab.setTabTextColors(Color.WHITE, Color.BLACK)
+            for(i in 0.. 7){
+                tab.getTabAt(i)?.view?.setBackgroundResource(R.drawable.tab_basic)
+            }
+            tab.getTabAt(pos)?.view?.setBackgroundResource(R.drawable.tab_selected_background)
+            if(pos == 0){
+                tab.getTabAt(1)?.view?.setBackgroundResource(R.drawable.tab_unselected2)
+            }
+            else if(pos == 6){
+                tab.getTabAt(5)?.view?.setBackgroundResource(R.drawable.tab_unselected)
+            }
+            else{
+                tab.getTabAt(pos - 1)?.view?.setBackgroundResource(R.drawable.tab_unselected)
+                tab.getTabAt(pos + 1)?.view?.setBackgroundResource(R.drawable.tab_unselected2)
+            }
         }
         else{
-            tab.getTabAt(pos - 1)?.view?.setBackgroundResource(R.drawable.tab_unselected)
-            tab.getTabAt(pos + 1)?.view?.setBackgroundResource(R.drawable.tab_unselected2)
+            tab.setTabTextColors(Color.LTGRAY, Color.WHITE)
+            for(i in 0.. 7){
+                tab.getTabAt(i)?.view?.setBackgroundResource(R.drawable.tab_noncollas)
+            }
+            tab.getTabAt(pos)?.view?.setBackgroundResource(R.drawable.tab_noncollas_selected_background)
         }
 
     }
