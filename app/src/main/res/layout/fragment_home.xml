@@ -103,7 +103,6 @@
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/tab_background"
                         app:tabTextColor="@color/black"
                         app:tabIndicatorFullWidth="true"
                         app:tabTextAppearance="@style/enjoying"
@@ -115,38 +114,6 @@
                         android:textAllCaps="false"
                         app:tabMode="scrollable" >
 
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/tabtalking1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            android:textAllCaps="false"
-                            android:text="Talking"/>
-
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/tabtalking2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:text="Enjoying"/>
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/tabtalking3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:text="Learning"/>
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/tabtalking4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:text="Exercising"/>
-                        <com.google.android.material.tabs.TabItem
-                            android:id="@+id/tabtalking5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:text="Relaxing"/>
                     </com.google.android.material.tabs.TabLayout>
 
                 </com.google.android.material.appbar.AppBarLayout>
