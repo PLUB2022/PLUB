@@ -3,11 +3,14 @@ package com.example.socialproject.mainFragments
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.marginTop
@@ -93,8 +96,13 @@ class HomeFragment : Fragment() {
 ////            binding.tabLayout.getTabAt(i)?.customView = textView
 ////        }
 
+        var fadeinani : Animation = AnimationUtils.loadAnimation(context, R.anim.fade_in)
+        var fadeoutani : Animation = AnimationUtils.loadAnimation(context, R.anim.fade_out)
+
+
         // 기본 색상, 선택된 색상 설정
         tabLayout.setTabTextColors(Color.WHITE, Color.BLACK)
+        ChangeAni(0, tabLayout)
 
         tabLayout.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener {
             override fun onTabReselected(tab: TabLayout.Tab?) { }
@@ -137,27 +145,41 @@ class HomeFragment : Fragment() {
 //        })
 ////        updateToolbarIconsOnScrollChange(toolbar, collapsed)
 
+
         appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
 
             when {
                 //  State Expanded
                 verticalOffset == 0 -> {
                     Log.d("tob", "확장됨")
-                    flag = true
-                    tabLayout.setBackgroundColor(Color.LTGRAY)
-                    tabLayout.setPadding(0,0,0,0)
-                    appbar.elevation = 0.0F
-                    ChangeAni(nowpos, tabLayout)
+                    if(!flag){
+                        flag = true
+                        tabLayout.startAnimation(fadeoutani)
+                        Handler().postDelayed({
+                            tabLayout.startAnimation(fadeinani)
+                            tabLayout.setBackgroundColor(Color.LTGRAY)
+                            tabLayout.setPadding(0,0,0,0)
+                            appbar.elevation = 0.0F
+                            ChangeAni(nowpos, tabLayout)
+                        }, 500)
 
+                    }
                 }
                 //  State Collapsed
                 abs(verticalOffset) >= appBarLayout.totalScrollRange -> {
                     Log.d("tob", "축소")
-                    flag = false
-                    tabLayout.setBackgroundColor(Color.WHITE)
-                    tabLayout.setPadding(0,0,0,14)
-                    appbar.elevation = 20.0F
-                    ChangeAni(nowpos, tabLayout)
+                    if(flag){
+                        flag = false
+                        tabLayout.startAnimation(fadeoutani)
+                        Handler().postDelayed({
+                            tabLayout.setBackgroundColor(Color.WHITE)
+                            tabLayout.setPadding(0,0,0,14)
+                            appbar.elevation = 10.0F
+                            ChangeAni(nowpos, tabLayout)
+                            tabLayout.startAnimation(fadeinani)
+                        }, 500)
+
+                    }
                 }//  Do anything for Collapse State
             }
         })
