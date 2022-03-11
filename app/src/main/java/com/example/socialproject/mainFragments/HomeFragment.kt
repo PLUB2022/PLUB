@@ -32,7 +32,7 @@ class HomeFragment : Fragment() {
     private var nowpos : Int = 0
     private var flag by Delegates.notNull<Boolean>()
     private lateinit var binding : FragmentHomeBinding
-    private val tabTitles = arrayListOf("   Talking   ", "   Enjoying   ", "   Learning   ", "   Exercising   ", "   Relaxing   ", "   Creating   ", "   Challenging   ")
+    private val tabTitles = arrayListOf("  Talking  ", "  Enjoying  ", "  Learning  ", "  Exercising  ", "  Relaxing  ", "  Creating  ", "  Challenging  ")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
