@@ -32,4 +32,20 @@
         android:background="@color/lightgray"
         />
 
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/white"
+        app:dotsCornerRadius="4dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="@color/lightgray"
+        app:progressMode="true"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
