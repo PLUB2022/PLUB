@@ -33,6 +33,7 @@
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas_selected_background.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected2.xml" value="0.21458333333333332" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected_background.xml" value="0.21458333333333332" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test_tab_basic.xml" value="0.21458333333333332" />
@@ -42,8 +43,10 @@
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_login.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main2.xml" value="0.18489583333333334" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_on_board.xml" value="0.284375" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_on_board_adapter.xml" value="0.284375" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_splash.xml" value="0.35989583333333336" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_club.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_club.xml" value="0.25257731958762886" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_feed.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.19947916666666668" />
