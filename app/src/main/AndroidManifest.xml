@@ -12,13 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SocialProject">
         <activity
+            android:name=".socialing.InfoSocialingActivity"
+            android:exported="true" />
+        <activity
+
             android:name=".login.OnBoardAdapter"
             android:exported="true" />
         <activity
             android:name=".login.OnBoardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".login.MainActivity"
             android:exported="true" />
         <activity
             android:name=".login.LoginActivity"
