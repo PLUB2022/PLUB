@@ -65,4 +65,7 @@ dependencies {
 
     //뷰페이저 인디케이터 라이브러리
     implementation 'com.tbuonomo:dotsindicator:4.2'
+
+    //블러뷰
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
 }

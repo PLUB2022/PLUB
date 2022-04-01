@@ -1,5 +1,6 @@
 package com.example.socialproject.homeFragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 import com.example.socialproject.databinding.FragmentHomeList1Binding
+import com.example.socialproject.socialing.InfoSocialingActivity
 
 class HomeFragmentList1 : Fragment() {
 
@@ -62,6 +64,11 @@ class HomeFragmentList1 : Fragment() {
                 Log.d("ViewPagerFragment", "Page ${position+1}")
             }
         })
+
+        binding.smallTalkTitle3.setOnClickListener {
+            val intent = Intent(context, InfoSocialingActivity::class.java)
+            startActivity(intent)
+        }
         return binding.root
     }
 }
