@@ -5,6 +5,7 @@ import android.animation.ValueAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -12,8 +13,12 @@ import android.widget.ImageView
 import android.widget.ScrollView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.socialproject.R
+import android.widget.Toast
 
+import com.example.socialproject.MainActivity
 
+import android.view.MotionEvent
+import android.view.View.OnTouchListener
 
 
 class InfoSocialingActivity : AppCompatActivity() {
@@ -21,12 +26,12 @@ class InfoSocialingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info_socialing)
 
+        var flag : Boolean = true
+
         val scrollView = findViewById<ScrollView>(R.id.infoSocialScrollView)
         val view = findViewById<ConstraintLayout>(R.id.hostgrid)
         val socialImageView = findViewById<ImageView>(R.id.SocialImageView)
         val contentView = findViewById<ConstraintLayout>(R.id.infoSocialContentView)
-        var fadeinani : Animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
-        var fadeoutani : Animation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
 
         //=====================버튼 클릭시 애니메이션 작동 ========================//
 //        contentView.setOnClickListener {
@@ -64,8 +69,20 @@ class InfoSocialingActivity : AppCompatActivity() {
                 }
 
                 heightAnimator.start()
+            flag = false
         },2000)
         //===============================================================================//
+
+        scrollView.setOnTouchListener { v, event ->
+            if(flag){
+                Log.d("TAG", "하이")
+                true
+            }
+            else{
+                false
+            }
+        }
+
     }
 
 
