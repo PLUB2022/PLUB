@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.ScrollView
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -23,6 +25,8 @@ class InfoSocialingActivity : AppCompatActivity() {
         val view = findViewById<ConstraintLayout>(R.id.hostgrid)
         val socialImageView = findViewById<ImageView>(R.id.SocialImageView)
         val contentView = findViewById<ConstraintLayout>(R.id.infoSocialContentView)
+        var fadeinani : Animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
+        var fadeoutani : Animation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
 
         //=====================버튼 클릭시 애니메이션 작동 ========================//
 //        contentView.setOnClickListener {
@@ -49,8 +53,9 @@ class InfoSocialingActivity : AppCompatActivity() {
             scrollView.post {
                 ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
             }
-            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
-            heightAnimator.duration = 2000
+            //TODO 50은 임시, px단위로 계산되기 때문에 비율로 설정해야함
+            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3 + 50)
+            heightAnimator.duration = 1000
 
 
                 heightAnimator.addUpdateListener { animation: ValueAnimator ->
