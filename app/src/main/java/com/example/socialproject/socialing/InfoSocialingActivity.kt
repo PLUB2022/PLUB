@@ -22,13 +22,33 @@ class InfoSocialingActivity : AppCompatActivity() {
         val scrollView = findViewById<ScrollView>(R.id.infoSocialScrollView)
         val view = findViewById<ConstraintLayout>(R.id.hostgrid)
         val socialImageView = findViewById<ImageView>(R.id.SocialImageView)
+        val contentView = findViewById<ConstraintLayout>(R.id.infoSocialContentView)
+
+        //=====================버튼 클릭시 애니메이션 작동 ========================//
+//        contentView.setOnClickListener {
+//            scrollView.post {
+//                ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
+//            }
+//            val aa = view.height.toInt()
+//            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
+//            heightAnimator.duration = 2000
+//
+//
+//            heightAnimator.addUpdateListener { animation: ValueAnimator ->
+//                view.layoutParams.height = animation.animatedValue as Int
+//                view.requestLayout()
+//            }
+//
+//            heightAnimator.start()
+//        }
+//================================================================================
+
+
+        //================================ 자동 스크롤 (2초) ==============================//
         Handler().postDelayed({
-            //scrollView.smoothScrollTo(0, socialImageView.bottom)
-            //scrollView.smoothScrollToView(socialImageView)
             scrollView.post {
                 ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
             }
-            val aa = view.height.toInt()
             val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
             heightAnimator.duration = 2000
 
@@ -40,6 +60,7 @@ class InfoSocialingActivity : AppCompatActivity() {
 
                 heightAnimator.start()
         },2000)
+        //===============================================================================//
     }
 
 
