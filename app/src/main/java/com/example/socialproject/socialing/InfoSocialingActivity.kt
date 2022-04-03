@@ -2,6 +2,7 @@ package com.example.socialproject.socialing
 
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -32,45 +33,53 @@ class InfoSocialingActivity : AppCompatActivity() {
         val view = findViewById<ConstraintLayout>(R.id.hostgrid)
         val socialImageView = findViewById<ImageView>(R.id.SocialImageView)
         val contentView = findViewById<ConstraintLayout>(R.id.infoSocialContentView)
+        val infomoim = findViewById<ConstraintLayout>(R.id.rectangle_3)
+
+        infomoim.setOnClickListener {
+            val intent = Intent(this, InfoSocialingFeedActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         //=====================버튼 클릭시 애니메이션 작동 ========================//
-//        contentView.setOnClickListener {
-//            scrollView.post {
-//                ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
-//            }
-//            val aa = view.height.toInt()
-//            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
-//            heightAnimator.duration = 2000
-//
-//
-//            heightAnimator.addUpdateListener { animation: ValueAnimator ->
-//                view.layoutParams.height = animation.animatedValue as Int
-//                view.requestLayout()
-//            }
-//
-//            heightAnimator.start()
-//        }
+        contentView.setOnClickListener {
+            scrollView.post {
+                ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
+            }
+            val aa = view.height.toInt()
+            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
+            heightAnimator.duration = 1000
+
+
+            heightAnimator.addUpdateListener { animation: ValueAnimator ->
+                view.layoutParams.height = animation.animatedValue as Int
+                view.requestLayout()
+            }
+            flag = false
+
+            heightAnimator.start()
+        }
 //================================================================================
 
 
         //================================ 자동 스크롤 (2초) ==============================//
-        Handler().postDelayed({
-            scrollView.post {
-                ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
-            }
-            //TODO 50은 임시, px단위로 계산되기 때문에 비율로 설정해야함
-            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3 + 50)
-            heightAnimator.duration = 1000
-
-
-                heightAnimator.addUpdateListener { animation: ValueAnimator ->
-                    view.layoutParams.height = animation.animatedValue as Int
-                    view.requestLayout()
-                }
-
-                heightAnimator.start()
-            flag = false
-        },2000)
+//        Handler().postDelayed({
+//            scrollView.post {
+//                ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
+//            }
+//            //TODO 50은 임시, px단위로 계산되기 때문에 비율로 설정해야함
+//            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3 + 50)
+//            heightAnimator.duration = 1000
+//
+//
+//                heightAnimator.addUpdateListener { animation: ValueAnimator ->
+//                    view.layoutParams.height = animation.animatedValue as Int
+//                    view.requestLayout()
+//                }
+//
+//                heightAnimator.start()
+//            flag = false
+//        },2000)
         //===============================================================================//
 
         scrollView.setOnTouchListener { v, event ->
