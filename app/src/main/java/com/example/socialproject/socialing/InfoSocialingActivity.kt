@@ -28,6 +28,7 @@ class InfoSocialingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_info_socialing)
 
         var flag : Boolean = true
+        var click = false
 
         val scrollView = findViewById<ScrollView>(R.id.infoSocialScrollView)
         val view = findViewById<ConstraintLayout>(R.id.hostgrid)
@@ -43,21 +44,28 @@ class InfoSocialingActivity : AppCompatActivity() {
 
         //=====================버튼 클릭시 애니메이션 작동 ========================//
         contentView.setOnClickListener {
-            scrollView.post {
-                ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
+            if(click){
+
             }
-            val aa = view.height.toInt()
-            val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
-            heightAnimator.duration = 1000
+            else{
+                scrollView.post {
+                    ObjectAnimator.ofInt(scrollView, "scrollY", socialImageView.bottom).setDuration(1000).start()
+                }
+                val aa = view.height.toInt()
+                val heightAnimator = ValueAnimator.ofInt(view.height, view.height * 3)
+                heightAnimator.duration = 1000
 
 
-            heightAnimator.addUpdateListener { animation: ValueAnimator ->
-                view.layoutParams.height = animation.animatedValue as Int
-                view.requestLayout()
+                heightAnimator.addUpdateListener { animation: ValueAnimator ->
+                    view.layoutParams.height = animation.animatedValue as Int
+                    view.requestLayout()
+                }
+                flag = false
+
+                heightAnimator.start()
+                click = true
             }
-            flag = false
 
-            heightAnimator.start()
         }
 //================================================================================
 
@@ -91,8 +99,5 @@ class InfoSocialingActivity : AppCompatActivity() {
                 false
             }
         }
-
     }
-
-
 }
