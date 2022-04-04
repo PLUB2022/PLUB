@@ -39,7 +39,6 @@ class InfoSocialingActivity : AppCompatActivity() {
         infomoim.setOnClickListener {
             val intent = Intent(this, InfoSocialingFeedActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         //=====================버튼 클릭시 애니메이션 작동 ========================//
