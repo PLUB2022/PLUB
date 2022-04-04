@@ -19,6 +19,7 @@ class HomeFragmentList1 : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
+    //테스트용 주석
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
