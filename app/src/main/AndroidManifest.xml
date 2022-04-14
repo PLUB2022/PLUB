@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SocialProject">
         <activity
+            android:name=".chyuime.infoChmeFilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chyuime.infoChmeActivity"
+            android:exported="false" />
+        <activity
             android:name=".socialing.InfoSocialingActivity"
             android:exported="true" />
         <activity
