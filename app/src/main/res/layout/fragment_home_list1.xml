@@ -28,57 +28,14 @@
                     android:layout_height="wrap_content">
 
 
-                    <ImageButton
-                        android:id="@+id/ellipse_2"
-                        android:layout_width="165px"
-                        android:layout_height="165px"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="12px"
-                        android:layout_marginEnd="48px"
-                        android:background="@drawable/ellipse_2"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageButton
-                        android:id="@+id/clarity_not"
-                        android:layout_width="78px"
-                        android:layout_height="78px"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="30px"
-                        android:layout_marginEnd="48px"
-                        android:clipToOutline="true"
-                        android:src="@drawable/ic_baseline_add_alert_24"
-                        app:layout_constraintEnd_toStartOf="@id/ellipse_2"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageButton
-                        android:id="@+id/clarity_sea"
-                        android:layout_width="78px"
-                        android:layout_height="78px"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="30px"
-                        android:layout_marginEnd="36px"
-                        android:clipToOutline="true"
-                        android:src="@drawable/ic_baseline_search_24"
-                        app:layout_constraintEnd_toStartOf="@id/clarity_not"
-                        app:layout_constraintTop_toTopOf="parent"
-
-                        />
-
-
-
                     <androidx.viewpager2.widget.ViewPager2
                         android:id="@+id/titleViewPager"
                         android:layout_width="match_parent"
                         android:layout_height="234.14dp"
-                        android:layout_marginTop="1dp"
                         app:layout_behavior="@string/appbar_scrolling_view_behavior"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/ellipse_2"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/socialHostTop"

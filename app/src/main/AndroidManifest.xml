@@ -15,9 +15,6 @@
             android:name=".chyuime.infoChmeFilterActivity"
             android:exported="false" />
         <activity
-            android:name=".chyuime.infoChmeActivity"
-            android:exported="false" />
-        <activity
             android:name=".socialing.InfoSocialingActivity"
             android:exported="true" />
         <activity
@@ -25,9 +22,6 @@
             android:exported="true" />
         <activity
             android:name=".login.OnBoardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".login.MainActivity"
             android:exported="true" />
         <activity
             android:name=".login.LoginActivity"
