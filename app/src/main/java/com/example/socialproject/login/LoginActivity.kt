@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.socialproject.HomeActivity
 import com.example.socialproject.R
+import com.example.socialproject.mapTest.MapTestActivity
 import com.kakao.sdk.common.util.Utility
 import com.nhn.android.naverlogin.OAuthLogin
 import com.nhn.android.naverlogin.OAuthLoginHandler
@@ -37,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
 
         val loginbtn = findViewById<OAuthLoginButton>(R.id.loginbtn)
         val test_logoutbtn = findViewById<TextView>(R.id.test_logoutbtn)
+        val test_mapbtn = findViewById<TextView>(R.id.test_mapbtn)
 
         val naver_client_id = "mzfqe9XHL4Ipv4ncF9vH"
         val naver_client_secret = "G2QHIjqGdD"
@@ -51,6 +53,12 @@ class LoginActivity : AppCompatActivity() {
             naver_client_secret,
             naver_client_name
         )
+
+        test_mapbtn.setOnClickListener {
+            val intent = Intent(this, MapTestActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 
         val keyHash = Utility.getKeyHash(this)
