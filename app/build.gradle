@@ -74,4 +74,7 @@ dependencies {
 
     //네이버 지도
     implementation 'com.naver.maps:map-sdk:3.14.0'
+
+    //네이버 현재 위치
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
 }
