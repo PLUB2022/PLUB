@@ -3,17 +3,24 @@ package com.example.socialproject.login
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.socialproject.HomeActivity
 import com.example.socialproject.R
 import com.kakao.sdk.common.util.Utility
 import com.nhn.android.naverlogin.OAuthLogin
 import com.nhn.android.naverlogin.OAuthLoginHandler
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStream
+import java.io.InputStreamReader
+import java.net.HttpURLConnection
+import java.net.MalformedURLException
+import java.net.URL
 
 
 class LoginActivity : AppCompatActivity() {
@@ -26,25 +33,30 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val loginbtn = findViewById<OAuthLoginButton>(R.id.loginbtn)
+        val test_logoutbtn = findViewById<TextView>(R.id.test_logoutbtn)
 
-        val naver_client_id = ""
-        val naver_client_secret = ""
-        val naver_client_name = ""
+        val naver_client_id = "mzfqe9XHL4Ipv4ncF9vH"
+        val naver_client_secret = "G2QHIjqGdD"
+        val naver_client_name = "PLUB"
 
         mContext = this
+
+        mOAuthLoginInstance = OAuthLogin.getInstance()
+        mOAuthLoginInstance.init(
+            mContext,
+            naver_client_id,
+            naver_client_secret,
+            naver_client_name
+        )
 
 
         val keyHash = Utility.getKeyHash(this)
         Log.d("Hash", keyHash)
 
+        test_logoutbtn.setOnClickListener {
+            mOAuthLoginInstance.logout(this)
+        }
         loginbtn.setOnClickListener {
-            mOAuthLoginInstance = OAuthLogin.getInstance()
-            mOAuthLoginInstance.init(
-                mContext,
-                naver_client_id,
-                naver_client_secret,
-                naver_client_name
-            )
             Log.d(
                 "TAG",
                 "Nhn status need login"
@@ -80,4 +92,5 @@ class LoginActivity : AppCompatActivity() {
 
 
     }
+
 }
