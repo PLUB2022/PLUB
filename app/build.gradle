@@ -68,4 +68,7 @@ dependencies {
 
     //블러뷰
     implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+
+    //네이버 로그인
+    implementation 'com.naver.nid:naveridlogin-android-sdk:4.2.6'
 }
