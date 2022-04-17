@@ -57,10 +57,10 @@ class NaverMapTestActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(naverMap: NaverMap) {
         this.naverMap = naverMap
         naverMap.locationSource = locationSource
-        naverMap.locationTrackingMode = LocationTrackingMode.Follow
+        //naverMap.locationTrackingMode = LocationTrackingMode.Follow
 
         var currentLocation: Location?
-        
+
         //권한 설정
         if (ActivityCompat.checkSelfPermission(
                 this,
