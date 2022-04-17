@@ -84,18 +84,16 @@ class NaverMapTestActivity : AppCompatActivity(), OnMapReadyCallback {
                 currentLocation = location
 
                 // 카메라 현재위치로 이동
-                val cameraUpdate = CameraUpdate.scrollTo(
-                    LatLng(
-                        currentLocation!!.latitude,
-                        currentLocation!!.longitude
-                    )
+                val cameraPosition = CameraPosition(
+                    LatLng(currentLocation!!.latitude, currentLocation!!.longitude), // 대상 지점
+                    17.0, // 줌 레벨
                 )
 
                 //현재위치 마커 표시
                 val marker = Marker()
                 marker.position = LatLng( currentLocation!!.latitude, currentLocation!!.longitude)
                 marker.map = naverMap
-                naverMap.moveCamera(cameraUpdate)
+                naverMap.cameraPosition = cameraPosition
             }
     }
 }
