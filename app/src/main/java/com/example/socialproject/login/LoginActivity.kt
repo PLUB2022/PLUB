@@ -3,7 +3,6 @@ package com.example.socialproject.login
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -11,12 +10,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.socialproject.HomeActivity
 import com.example.socialproject.R
+import com.example.socialproject.assign.AssignActivity
 import com.example.socialproject.mapTest.MapTestActivity
 import com.kakao.sdk.common.util.Utility
 import com.nhn.android.naverlogin.OAuthLogin
 import com.nhn.android.naverlogin.OAuthLoginHandler
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton
-import kotlinx.coroutines.runBlocking
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStream
@@ -24,7 +23,6 @@ import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
-import kotlin.concurrent.thread
 
 
 class LoginActivity : AppCompatActivity() {
@@ -39,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
         val loginbtn = findViewById<OAuthLoginButton>(R.id.loginbtn)
         val test_logoutbtn = findViewById<TextView>(R.id.test_logoutbtn)
         val test_mapbtn = findViewById<TextView>(R.id.test_mapbtn)
+        val assign = findViewById<TextView>(R.id.assignbtn)
 
         val naver_client_id = "mzfqe9XHL4Ipv4ncF9vH"
         val naver_client_secret = "G2QHIjqGdD"
@@ -53,6 +52,12 @@ class LoginActivity : AppCompatActivity() {
             naver_client_secret,
             naver_client_name
         )
+
+        assign.setOnClickListener {
+            val intent = Intent(this, AssignActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         test_mapbtn.setOnClickListener {
             val intent = Intent(this, MapTestActivity::class.java)
