@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.get
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 
@@ -15,8 +17,6 @@ class AssignActivity : AppCompatActivity() {
 
         var viewPager : ViewPager2 = findViewById(R.id.assignViewPager)
         var nextBtn : AppCompatButton = findViewById(R.id.nextButton1)
-        val test = findViewById<ConstraintLayout>(R.id.gender_age_layout)
-        Log.d("TAG", test.layoutParams.height.toString())
         val pagerAdapter = AssignAdapter(this)
         viewPager.adapter = pagerAdapter
 
@@ -28,9 +28,8 @@ class AssignActivity : AppCompatActivity() {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) { }
 
             override fun onPageSelected(position: Int) {
-                if(position == 0){
-
-                }
+                super.onPageSelected(position)
+                Log.d("TAg", position.toString() + " " + viewPager.height)
             }
         })
 

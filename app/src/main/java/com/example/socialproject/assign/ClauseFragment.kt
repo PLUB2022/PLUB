@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
+import com.example.socialproject.databinding.FragmentHomeBinding
 
 class ClauseFragment : Fragment() {
     override fun onCreateView(
@@ -22,5 +23,12 @@ class ClauseFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
+    override fun onResume() {
+        super.onResume()
+        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
+        if (layoutview != null) {
+            layoutview.requestLayout()
+        }
+    }
 
 }
