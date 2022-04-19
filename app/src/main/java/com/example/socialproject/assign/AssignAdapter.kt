@@ -1,6 +1,7 @@
 package com.example.socialproject.assign
 
 import android.app.Activity
+import android.text.Layout
 import android.util.Log
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -21,9 +22,14 @@ class AssignAdapter(fragmentManager: FragmentActivity) : FragmentStateAdapter(fr
             Log.d("TAG", position.toString() + " " + "성별 나이 프래그맨트 생성")
             return GenderAgeFragment()
         }
+        else if(position == 1){
+            Log.d("TAG", position.toString() + " " + "이용 약관 프래그맨트 생성")
+            return ClauseFragment()
+        }
         else{
             Log.d("TAG", position.toString() + " " + "프래그맨트 생성 다른거")
             return GenderAgeFragment()
         }
     }
+
 }
