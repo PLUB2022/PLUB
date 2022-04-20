@@ -29,11 +29,11 @@ class GenderAgeFragment(var assignActivity: AssignActivity) : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        val layoutHeight = view?.findViewById<ConstraintLayout>(R.id.gender_age_layout)
-        assignActivity.resizeViewPager(layoutHeight!!.layoutParams.height)
-//        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
-//        if (layoutview != null) {
-//            layoutview.requestLayout()
-//        }
+//        val layoutHeight = view?.findViewById<ConstraintLayout>(R.id.gender_age_layout)
+//        assignActivity.resizeViewPager(layoutHeight!!.layoutParams.height)
+        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
+        if (layoutview != null) {
+            layoutview.requestLayout()
+        }
     }
 }

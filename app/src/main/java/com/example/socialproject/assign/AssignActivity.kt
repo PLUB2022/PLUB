@@ -30,14 +30,11 @@ class AssignActivity : AppCompatActivity() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 Log.d("TAg", position.toString() + " " + viewPager.height)
+
             }
         })
 
 
-    }
-
-    fun resizeViewPager(height : Int){
-        viewPager.height = height
     }
 
     fun nextPage(){
