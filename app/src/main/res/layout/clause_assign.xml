@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/clause_assign_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
 
 
@@ -83,6 +76,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout1"
                 android:layout_width="311dp"
                 android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
@@ -135,19 +129,46 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clauseCheckBtn1"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/clause_explain_text1"
+                    android:layout_width="280dp"
+                    android:layout_height="237dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="4sp"
+                    android:text="[여러분을 환영합니다.]
+
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사
+
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사
+
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사"
+                    android:textColor="#636363"
+                    android:textSize="12sp"
+                    android:translationY="-1.8sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="15dp" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout2"
                 android:layout_width="311dp"
                 android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="26dp"
-                android:layout_marginTop="194dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/class_assign_check_layout_rect"
                 android:elevation="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/checklayout1">
 
                 <androidx.appcompat.widget.AppCompatButton
                     app:layout_constraintTop_toTopOf="parent"
@@ -193,16 +214,17 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout3"
                 android:layout_width="311dp"
                 android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="26dp"
-                android:layout_marginTop="264dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/class_assign_check_layout_rect"
                 android:elevation="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/checklayout2">
 
                 <androidx.appcompat.widget.AppCompatButton
                     app:layout_constraintTop_toTopOf="parent"
@@ -245,19 +267,21 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout4"
                 android:layout_width="311dp"
                 android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="26dp"
-                android:layout_marginTop="334dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/class_assign_check_layout_rect"
                 android:elevation="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/checklayout3">
 
                 <androidx.appcompat.widget.AppCompatButton
                     app:layout_constraintTop_toTopOf="parent"
@@ -309,11 +333,11 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="26dp"
-                android:layout_marginTop="404dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/class_assign_check_layout_rect"
                 android:elevation="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/checklayout4">
 
                 <androidx.appcompat.widget.AppCompatButton
                     app:layout_constraintTop_toTopOf="parent"
@@ -369,10 +393,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/lastCheck"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
 
 
 
