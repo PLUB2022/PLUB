@@ -11,13 +11,13 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 
 class AssignActivity : AppCompatActivity() {
+    lateinit var viewPager : ViewPager2
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_assign)
 
-        var viewPager : ViewPager2 = findViewById(R.id.assignViewPager)
-        var nextBtn : AppCompatButton = findViewById(R.id.nextButton1)
-        val pagerAdapter = AssignAdapter(this)
+        viewPager = findViewById(R.id.assignViewPager)
+        val pagerAdapter = AssignAdapter(this, this)
         viewPager.adapter = pagerAdapter
 
         viewPager.isUserInputEnabled = false
@@ -33,10 +33,15 @@ class AssignActivity : AppCompatActivity() {
             }
         })
 
-        nextBtn.setOnClickListener {
-            var temp = viewPager.currentItem
-            viewPager.setCurrentItem(temp + 1, true)
-        }
 
+    }
+
+    fun resizeViewPager(height : Int){
+        viewPager.height = height
+    }
+
+    fun nextPage(){
+        var temp = viewPager.currentItem
+        viewPager.setCurrentItem(temp + 1, true)
     }
 }

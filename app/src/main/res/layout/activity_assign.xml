@@ -72,23 +72,12 @@ PLUB!"
                 app:layout_constraintTop_toBottomOf="@id/assignIndicator">
 
 
-                <androidx.viewpager2.widget.ViewPager2
+                <com.example.socialproject.assign.CustomViewPager
                     android:id="@+id/assignViewPager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/nextButton1"
-                    android:layout_width="280dp"
-                    android:layout_height="42dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:text="다음"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

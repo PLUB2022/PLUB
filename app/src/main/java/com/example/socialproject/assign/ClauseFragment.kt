@@ -6,13 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatButton
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 import com.example.socialproject.databinding.FragmentHomeBinding
 
-class ClauseFragment : Fragment() {
+class ClauseFragment(var assignActivity: AssignActivity) : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -21,14 +22,20 @@ class ClauseFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var next = view.findViewById<AppCompatButton>(R.id.clause_next_btn)
+        next.setOnClickListener {
+            assignActivity.nextPage()
+        }
     }
 
     override fun onResume() {
         super.onResume()
-        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
-        if (layoutview != null) {
-            layoutview.requestLayout()
-        }
+        val layoutHeight = view?.findViewById<ConstraintLayout>(R.id.clause_assign_layout)
+        assignActivity.resizeViewPager(layoutHeight!!.layoutParams.height)
+//        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
+//        if (layoutview != null) {
+//            layoutview.requestLayout()
+//        }
     }
 
 }

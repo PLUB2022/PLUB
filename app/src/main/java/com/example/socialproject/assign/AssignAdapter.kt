@@ -13,22 +13,22 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.socialproject.homeFragment.HomeFragmentList1
 import java.util.ArrayList
 
-class AssignAdapter(fragmentManager: FragmentActivity) : FragmentStateAdapter(fragmentManager) {
+class AssignAdapter(fragmentManager: FragmentActivity, var assignActivity: AssignActivity) : FragmentStateAdapter(fragmentManager) {
 
     override fun getItemCount(): Int = 5
 
     override fun createFragment(position: Int): Fragment {
         if(position == 0){
             Log.d("TAG", position.toString() + " " + "성별 나이 프래그맨트 생성")
-            return GenderAgeFragment()
+            return GenderAgeFragment(assignActivity)
         }
         else if(position == 1){
             Log.d("TAG", position.toString() + " " + "이용 약관 프래그맨트 생성")
-            return ClauseFragment()
+            return ClauseFragment(assignActivity)
         }
         else{
             Log.d("TAG", position.toString() + " " + "프래그맨트 생성 다른거")
-            return GenderAgeFragment()
+            return GenderAgeFragment(assignActivity)
         }
     }
 
