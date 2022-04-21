@@ -26,6 +26,10 @@ class AssignAdapter(fragmentManager: FragmentActivity, var assignActivity: Assig
             Log.d("TAG", position.toString() + " " + "이용 약관 프래그맨트 생성")
             return ClauseFragment(assignActivity)
         }
+        else if(position == 2){
+            Log.d("TAG", position.toString() + " " + "접근 권한 프래그맨트 생성")
+            return AccessAuthorityFragment(assignActivity)
+        }
         else{
             Log.d("TAG", position.toString() + " " + "프래그맨트 생성 다른거")
             return GenderAgeFragment(assignActivity)

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/access_authority_assign.xml" value="0.2525" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/class_assign_check_layout_rect.xml" value="0.1955" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/clause_assign_check_rect.xml" value="0.1955" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/clause_assign_line.xml" value="0.1955" />
@@ -12,10 +13,14 @@
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_2.xml" value="0.1955" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_3.xml" value="0.1955" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas_selected_background.xml" value="0.2525" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.252" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected.xml" value="0.2525" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected2.xml" value="0.1955" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/font-v26/font.xml" value="0.21770833333333334" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/font/font.xml" value="0.17870884993587002" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/access_authority_assign.xml" value="0.67" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_assign.xml" value="0.5" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_gender_age.xml" value="0.14194100042753313" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_home.xml" value="0.30055579307396324" />

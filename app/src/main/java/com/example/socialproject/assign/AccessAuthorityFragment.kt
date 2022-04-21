@@ -12,16 +12,16 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
 
-class GenderAgeFragment(var assignActivity: AssignActivity) : Fragment() {
+class AccessAuthorityFragment(var assignActivity: AssignActivity) : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View = inflater.inflate(R.layout.gender_age_assign, container, false)
+    ): View = inflater.inflate(R.layout.access_authority_assign, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var next = view.findViewById<AppCompatButton>(R.id.gender_age_next_btn)
+        var next = view.findViewById<AppCompatButton>(R.id.access_authority_next_btn)
         next.setOnClickListener {
             assignActivity.nextPage()
         }
@@ -29,7 +29,9 @@ class GenderAgeFragment(var assignActivity: AssignActivity) : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        val layoutview = view?.findViewById<View>(R.id.access_authority_layout)
+//        val layoutHeight = view?.findViewById<ConstraintLayout>(R.id.gender_age_layout)
+//        assignActivity.resizeViewPager(layoutHeight!!.layoutParams.height)
+        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
         if (layoutview != null) {
             layoutview.requestLayout()
         }
