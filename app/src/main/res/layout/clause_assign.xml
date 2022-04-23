@@ -63,7 +63,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/allCheckBtn"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
@@ -117,7 +117,7 @@
                     android:gravity="top"
                     />
 
-                <View
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/clauseCheckBtn1"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
@@ -199,7 +199,7 @@
                     android:gravity="top"
                     />
 
-                <View
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/clauseCheckBtn2"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
@@ -255,7 +255,7 @@
                     android:gravity="top"
                     />
 
-                <View
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/clauseCheckBtn3"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
@@ -312,7 +312,7 @@
                     android:gravity="top"
                     />
 
-                <View
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/clauseCheckBtn4"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
@@ -368,7 +368,7 @@
                     android:gravity="top"
                     />
 
-                <View
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/clauseCheckBtn5"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
