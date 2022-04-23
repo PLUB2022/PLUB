@@ -15,7 +15,7 @@ import java.util.ArrayList
 
 class AssignAdapter(fragmentManager: FragmentActivity, var assignActivity: AssignActivity) : FragmentStateAdapter(fragmentManager) {
 
-    override fun getItemCount(): Int = 5
+    override fun getItemCount(): Int = 6
 
     override fun createFragment(position: Int): Fragment {
         if(position == 0){
@@ -29,6 +29,14 @@ class AssignAdapter(fragmentManager: FragmentActivity, var assignActivity: Assig
         else if(position == 2){
             Log.d("TAG", position.toString() + " " + "접근 권한 프래그맨트 생성")
             return AccessAuthorityFragment(assignActivity)
+        }
+        else if(position == 3){
+            Log.d("TAG", position.toString() + " " +  "소셜링 선택 프래그맨트 생성")
+            return ChoiceSocialingFragment(assignActivity)
+        }
+        else if(position == 4){
+            Log.d("TAG", position.toString() + " " +  "소셜링 선택 프래그맨트 생성")
+            return ClickSocialingFragment(assignActivity)
         }
         else{
             Log.d("TAG", position.toString() + " " + "프래그맨트 생성 다른거")

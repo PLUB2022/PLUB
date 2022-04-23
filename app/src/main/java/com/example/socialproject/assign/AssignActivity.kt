@@ -39,6 +39,21 @@ class AssignActivity : AppCompatActivity() {
 
     fun nextPage(){
         var temp = viewPager.currentItem
+        viewPager.setCurrentItem(temp + 1, false)
+    }
+
+    fun goNextPage(){
+        var temp = viewPager.currentItem
+        viewPager.setCurrentItem(temp + 2, false)
+    }
+
+    fun clickPage(){
+        var temp = viewPager.currentItem
         viewPager.setCurrentItem(temp + 1, true)
+    }
+
+    fun prevPage(){
+        var temp = viewPager.currentItem
+        viewPager.setCurrentItem(temp - 1, true)
     }
 }

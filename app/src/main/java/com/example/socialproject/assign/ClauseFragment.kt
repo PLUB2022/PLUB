@@ -7,6 +7,8 @@ import android.os.PersistableBundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -32,8 +34,20 @@ class ClauseFragment(var assignActivity: AssignActivity) : Fragment() {
         var seemorebtn = view.findViewById<AppCompatButton>(R.id.seemoreBtn)
         var checklayout = view.findViewById<ConstraintLayout>(R.id.checklayout1)
         var clauseExplainText1 = view.findViewById<TextView>(R.id.clause_explain_text1)
+
+        var fadeinani : Animation = AnimationUtils.loadAnimation(context, R.anim.fade_in)
+        var fadeoutani : Animation = AnimationUtils.loadAnimation(context, R.anim.fade_out)
+        val layoutview = view?.findViewById<View>(R.id.clause_assign_layout)
+        if (layoutview != null) {
+                layoutview.startAnimation(fadeinani)
+        }
         next.setOnClickListener {
-            assignActivity.nextPage()
+            if (layoutview != null) {
+                layoutview.startAnimation(fadeoutani)
+            }
+            Handler().postDelayed({
+                assignActivity.nextPage()
+            },200)
         }
 
 
@@ -85,6 +99,6 @@ class ClauseFragment(var assignActivity: AssignActivity) : Fragment() {
         if (layoutview != null) {
             layoutview.requestLayout()
         }
-    }
 
+    }
 }
