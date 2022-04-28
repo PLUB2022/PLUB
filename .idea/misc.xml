@@ -3,70 +3,78 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background_selector.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_basic.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected2.xml" value="0.561025641025641" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home.xml" value="0.5" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.2692502532928065" />
-        <entry key="..\:/Users/H/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title.xml" value="0.3822463768115942" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/access_authority_assign.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/choice_socialing_rect.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/class_assign_check_layout_rect.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/clause_assign_check_rect.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/clause_assign_checked_rect.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/clause_assign_line.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_1.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_3.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/line_3.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/line_4.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/line_5.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_2.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_3.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/selected_choice_assign_btn.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas_selected_background.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.252" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected2.xml" value="0.1955" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/unselected_choice_assign_btn.xml" value="0.2525" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/font-v26/font.xml" value="0.21770833333333334" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/font/font.xml" value="0.17870884993587002" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/access_authority_assign.xml" value="0.67" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_assign.xml" value="0.5" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_gender_age.xml" value="0.14194100042753313" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_home.xml" value="0.30055579307396324" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_login.xml" value="0.13706644379440033" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_map_test.xml" value="0.13381787088499358" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_naver_map_test.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_on_board.xml" value="0.13685750104471375" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_on_board_adapter.xml" value="0.16590678824721378" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/activity_splash.xml" value="0.30055579307396324" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/choice_socialing_assign.xml" value="0.5673671199011124" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/clause_assign.xml" value="0.33" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/click_socialing_assign.xml" value="0.30055579307396324" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_clause.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/gender_age.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/gender_age_assign.xml" value="0.1875" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/titleslider1.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.252" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.252" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/border_layout.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_not.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/clarity_sea.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_1.xml" value="0.215625" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_2.xml" value="0.33177083333333335" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ellipse_3.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_add_alert_24.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.33177083333333335" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21458333333333332" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/line_3.xml" value="0.215625" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/line_4.xml" value="0.21354166666666666" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/line_5.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_2.xml" value="0.209375" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_3.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_4.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/rectangle_5.xml" value="0.215625" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_backgroud.xml" value="0.20833333333333334" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background.xml" value="0.21458333333333332" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_background_selector.xml" value="0.20833333333333334" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_basic.xml" value="0.21666666666666667" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas.xml" value="0.21666666666666667" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_noncollas_selected_background.xml" value="0.21666666666666667" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_selected_background.xml" value="0.20833333333333334" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected.xml" value="0.21666666666666667" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected2.xml" value="0.21458333333333332" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/tab_unselected_background.xml" value="0.21458333333333332" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test.xml" value="0.21302083333333333" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test_tab_basic.xml" value="0.21458333333333332" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test_unselect.xml" value="0.21458333333333332" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/drawable/test_unselect1.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_info_socialing.xml" value="0.27071428571428574" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_info_socialing.xml" value="0.1703125" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_login.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_main2.xml" value="0.18489583333333334" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_on_board.xml" value="0.284375" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_on_board_adapter.xml" value="0.284375" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/activity_splash.xml" value="0.35989583333333336" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_club.xml" value="0.25257731958762886" />
+        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_club.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_feed.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_profile.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_social.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/item_view.xml" value="0.20052083333333334" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title.xml" value="0.1921875" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/tab_title2.xml" value="0.196875" />
-        <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/test_layout.xml" value="0.196875" />
         <entry key="..\:/Users/rudtj/Documents/GitHub/PLUB/app/src/main/res/layout/titleslider1.xml" value="0.271875" />
-        <entry key="app/src/main/res/drawable/ant_design_.xml" value="0.1365" />
-        <entry key="app/src/main/res/drawable/ic_round_ar.xml" value="0.1365" />
-        <entry key="app/src/main/res/layout/activity_info_socialing.xml" value="0.1157548125633232" />
-        <entry key="app/src/main/res/layout/activity_info_socialing_feed.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_info_chme.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_info_chme_filter.xml" value="0.19610507246376813" />
       </map>
     </option>
   </component>

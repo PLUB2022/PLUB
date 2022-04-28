@@ -161,7 +161,7 @@ class HomeFragment : Fragment() {
                             tabLayout.setPadding(0,0,0,0)
                             appbar.elevation = 0.0F
                             ChangeAni(nowpos, tabLayout)
-                        }, 500)
+                        }, 200)
 
                     }
                 }
@@ -177,7 +177,7 @@ class HomeFragment : Fragment() {
                             appbar.elevation = 10.0F
                             ChangeAni(nowpos, tabLayout)
                             tabLayout.startAnimation(fadeinani)
-                        }, 500)
+                        }, 200)
 
                     }
                 }//  Do anything for Collapse State
