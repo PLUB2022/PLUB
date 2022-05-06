@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.194" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/access_authority_assign.xml" value="0.2525" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/choice_socialing_rect.xml" value="0.2525" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/drawable/class_assign_check_layout_rect.xml" value="0.1955" />
@@ -42,6 +43,7 @@
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/clause_assign.xml" value="0.33" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/click_socialing_assign.xml" value="0.30055579307396324" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_clause.xml" value="0.15391192817443353" />
+        <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_feed.xml" value="0.1526293287729799" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/fragment_home_list1.xml" value="0.15391192817443353" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/gender_age.xml" value="0.15391192817443353" />
         <entry key="..\:/Users/GyeongSeok/Documents/GitHub/PLUB/app/src/main/res/layout/gender_age_assign.xml" value="0.1875" />
