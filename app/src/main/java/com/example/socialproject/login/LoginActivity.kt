@@ -106,8 +106,9 @@ class LoginActivity : AppCompatActivity() {
                                     .toString()
                             )
                             val token = "$accessToken" // 네이버 로그인 접근 토큰;
-                            api.post_users(accessToken).enqueue(object :
-                                retrofit2.Callback<String> {
+
+                            // 서버로 통신 (accessToken 값 보내기 GET으로!)
+                            api.getNaverLogin(accessToken).enqueue(object : retrofit2.Callback<String> {
                                 override fun onResponse(call: Call<String>, response: Response<String>) {
                                     Log.d("log",response.toString())
                                     Log.d("log", response.body().toString())
