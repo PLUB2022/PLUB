@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clause_assign_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="27dp"
+                android:gravity="top"
+                android:letterSpacing="-0.01"
+                android:text="성별과 나이를 입력해 주세요."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="26dp"
+                android:gravity="top"
+                android:letterSpacing="-0.01"
+                android:text="회원님이 활동할 때  필요해요."
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="70dp"
+                android:gravity="top"
+                android:letterSpacing="-0.01"
+                android:text="전체 동의"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="312dp"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="106dp"
+                android:background="@drawable/clause_assign_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/allCheckBtn"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="303dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/clause_assign_check_rect"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout1"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="124dp"
+                android:background="@drawable/class_assign_check_layout_rect"
+                android:elevation="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/seemoreBtn"
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:text="이용약관 및 개인정보취급방침 (필수)"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.01"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clauseCheckBtn1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="277dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/clause_assign_check_rect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clauseCheckBtn1"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/clause_explain_text1"
+                    android:layout_width="280dp"
+                    android:layout_height="237dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="4sp"
+                    android:text="[여러분을 환영합니다.]
+
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사
+
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사
+
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사"
+                    android:textColor="#636363"
+                    android:textSize="12sp"
+                    android:translationY="-1.8sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="15dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout2"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/class_assign_check_layout_rect"
+                android:elevation="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checklayout1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/seemoreBtn1"
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:text="위치기반서비스 이용약관 (필수)"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.01"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clauseCheckBtn2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="277dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/clause_assign_check_rect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout3"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/class_assign_check_layout_rect"
+                android:elevation="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checklayout2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/seemoreBtn2"
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:text="만 14세 이상 확인 (필수)"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.01"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clauseCheckBtn3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="277dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/clause_assign_check_rect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checklayout4"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/class_assign_check_layout_rect"
+                android:elevation="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checklayout3">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/seemoreBtn3"
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:text="개인정보 수집 이용 동의 (필수)"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.01"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clauseCheckBtn4"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="277dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/clause_assign_check_rect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lastCheck"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/class_assign_check_layout_rect"
+                android:elevation="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checklayout4">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/seemoreBtn4"
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:text="마케팅 활용 동의 (선택)"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.01"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clauseCheckBtn5"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="277dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/clause_assign_check_rect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clause_next_btn"
+                android:layout_width="280dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="다음"
+                android:layout_marginTop="60dp"
+                app:layout_constraintTop_toBottomOf="@+id/lastCheck"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

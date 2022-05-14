@@ -8,5 +8,8 @@
 </string>
 
     <string name="moresee">+ \u00EB\u008D\u0094\u00EB\u00B3\u00B4\u00EA\u00B8\u00B0</string>
+    <string name="naver_client_id">mzfqe9XHL4Ipv4ncF9vH</string>
+    <string name="naver_client_secret">G2QHIjqGdD</string>
+    <string name="naver_client_name">PLUB</string>
 
 </resources>

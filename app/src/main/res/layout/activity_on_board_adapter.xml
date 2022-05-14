@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.OnBoardAdapter">
+
+    <ImageView
+        android:id="@+id/OnBoardImage"
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/lightgray"
+        />
+
+    <TextView
+        android:id="@+id/OnBoardTitle"
+        android:layout_width="266dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OnBoardImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="여기다 뭐라 써야"
+        android:textAppearance="@style/OnBoardTitle"
+        android:gravity="center_horizontal|top"
+        />
+
+    <TextView
+        android:id="@+id/OnBoardText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OnBoardTitle"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/pretendard_variable"
+        android:textSize="14dp"
+        android:text="아직 불러 부끄러운 무성할 벌레는 새워 까닭입니다.\n사람들의 나는 노새, 언덕 가을 거외다. 부끄러운 하나에 어머니, 잔디가 별 책상을 이제 없이 거외다. 쉬이 하늘에는 내일 묻힌 까닭입니다. 마리아 아침이 써 이국 책상을 봅니다."
+        android:gravity="center_horizontal|top"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

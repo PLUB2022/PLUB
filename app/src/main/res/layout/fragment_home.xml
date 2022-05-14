@@ -20,8 +20,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="60dp">
 
-
-
                 <com.google.android.material.appbar.AppBarLayout
                     android:id="@+id/appbar"
                     android:layout_width="match_parent"
@@ -30,6 +28,7 @@
                     android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
                     app:liftOnScroll="true">
 
+
                     <androidx.appcompat.widget.Toolbar
                         android:id="@+id/topbar"
                         android:layout_width="match_parent"
@@ -37,34 +36,86 @@
                         android:fitsSystemWindows="true"
                         android:text="소셜링"
                         android:background="@color/top_tab_back_color"
-                        app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
-                        >
+                        app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed">
 
-                        <TextView
-                            android:id="@+id/toptitle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="34dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="24dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginTop="13dp"
-                            android:text="소셜링"
-                            android:textAppearance="@style/toptitle"
-                            android:gravity="center_vertical"
-                            />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/toptitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="34dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center_vertical"
+                                android:text="소셜링"
+                                android:textAppearance="@style/toptitle"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_editor_absoluteX="6dp" />
+
+                            <ImageButton
+                                android:id="@+id/ellipse_2"
+                                android:layout_width="165px"
+                                android:layout_height="165px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/ellipse_2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/clarity_not"
+                                android:layout_width="78px"
+                                android:layout_height="78px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                android:clipToOutline="true"
+                                android:src="@drawable/ic_baseline_add_alert_24"
+                                app:layout_constraintEnd_toStartOf="@id/ellipse_2"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/clarity_sea"
+                                android:layout_width="78px"
+                                android:layout_height="78px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                android:clipToOutline="true"
+                                android:src="@drawable/ic_baseline_search_24"
+                                app:layout_constraintEnd_toStartOf="@id/clarity_not"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                     </androidx.appcompat.widget.Toolbar>
 
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="31dp"
-                        android:background="@color/top_tab_back_color"
-                        app:tabIconTint="#F57C00"
-                        app:tabIndicatorColor="#F57C00"
-                        app:tabIndicatorHeight="4dp"
-                        app:tabMode="scrollable"
-                        app:tabSelectedTextColor="#F5F5F5"
-                        app:tabTextColor="#FFE0B2" />
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        app:tabTextColor="@color/black"
+                        app:tabIndicatorFullWidth="true"
+                        app:tabTextAppearance="@style/enjoying"
+                        app:tabMaxWidth="0dp"
+                        app:tabGravity="center"
+                        app:tabBackground="@drawable/tab_background_selector"
+                        app:tabIndicatorColor="@color/white"
+                        app:tabIndicatorHeight="0dp"
+                        android:textAllCaps="false"
+                        app:tabMode="scrollable" >
+
+                    </com.google.android.material.tabs.TabLayout>
 
                 </com.google.android.material.appbar.AppBarLayout>
 

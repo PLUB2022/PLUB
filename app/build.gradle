@@ -62,4 +62,23 @@ dependencies {
 
     //카카오톡
     implementation "com.kakao.sdk:v2-user:2.0.1"
+
+    //뷰페이저 인디케이터 라이브러리
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+
+    //블러뷰
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+
+    //네이버 로그인
+    implementation 'com.naver.nid:naveridlogin-android-sdk:4.2.6'
+
+    //네이버 지도
+    implementation 'com.naver.maps:map-sdk:3.14.0'
+
+    //네이버 현재 위치
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
 }
