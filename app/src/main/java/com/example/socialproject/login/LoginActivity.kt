@@ -5,7 +5,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.webkit.CookieManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +17,6 @@ import com.nhn.android.naverlogin.OAuthLogin
 import com.nhn.android.naverlogin.OAuthLoginHandler
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton
 import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.Response
 import java.io.BufferedReader
 import java.io.IOException
@@ -30,33 +28,31 @@ import java.net.URL
 
 
 class LoginActivity : AppCompatActivity() {
-    lateinit var mOAuthLoginInstance: OAuthLogin
-    lateinit var mContext: Context
-    val api = RetrofitService.create()
-    private val BASE_URL = "http://10.0.2.2:8080/"
-
+    private lateinit var mOAuthLoginInstance: OAuthLogin
+    private lateinit var mContext: Context
+    val api: LoginService = LoginService.create()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val loginbtn = findViewById<OAuthLoginButton>(R.id.loginbtn)
-        val test_logoutbtn = findViewById<TextView>(R.id.test_logoutbtn)
-        val test_mapbtn = findViewById<TextView>(R.id.test_mapbtn)
+        val loginBtn = findViewById<OAuthLoginButton>(R.id.loginbtn)
+        val testLogoutBtn = findViewById<TextView>(R.id.test_logoutbtn)
+        val testMapBtn = findViewById<TextView>(R.id.test_mapbtn)
         val assign = findViewById<TextView>(R.id.assignbtn)
 
-        val naver_client_id = "mzfqe9XHL4Ipv4ncF9vH"
-        val naver_client_secret = "G2QHIjqGdD"
-        val naver_client_name = "PLUB"
+        val naverClientId = "mzfqe9XHL4Ipv4ncF9vH"
+        val naverClientSecret = "G2QHIjqGdD"
+        val naverClientName = "PLUB"
 
         mContext = this
 
         mOAuthLoginInstance = OAuthLogin.getInstance()
         mOAuthLoginInstance.init(
             mContext,
-            naver_client_id,
-            naver_client_secret,
-            naver_client_name
+            naverClientId,
+            naverClientSecret,
+            naverClientName
         )
 
         assign.setOnClickListener {
@@ -65,7 +61,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
-        test_mapbtn.setOnClickListener {
+        testMapBtn.setOnClickListener {
             val intent = Intent(this, MapTestActivity::class.java)
             startActivity(intent)
             finish()
@@ -75,12 +71,12 @@ class LoginActivity : AppCompatActivity() {
         val keyHash = Utility.getKeyHash(this)
         Log.d("Hash", keyHash)
 
-        test_logoutbtn.setOnClickListener {
+        testLogoutBtn.setOnClickListener {
             Thread{
                 mOAuthLoginInstance.logoutAndDeleteToken(this)
             }.start()
         }
-        loginbtn.setOnClickListener {
+        loginBtn.setOnClickListener {
             Log.d(
                 "TAG",
                 "Nhn status need login"
