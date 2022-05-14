@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.webkit.CookieManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,9 @@ import com.kakao.sdk.common.util.Utility
 import com.nhn.android.naverlogin.OAuthLogin
 import com.nhn.android.naverlogin.OAuthLoginHandler
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStream
@@ -28,6 +32,8 @@ import java.net.URL
 class LoginActivity : AppCompatActivity() {
     lateinit var mOAuthLoginInstance: OAuthLogin
     lateinit var mContext: Context
+    val api = RetrofitService.create()
+    private val BASE_URL = "http://10.0.2.2:8080/"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -100,6 +106,22 @@ class LoginActivity : AppCompatActivity() {
                                     .toString()
                             )
                             val token = "$accessToken" // 네이버 로그인 접근 토큰;
+                            api.post_users(accessToken).enqueue(object :
+                                retrofit2.Callback<String> {
+                                override fun onResponse(call: Call<String>, response: Response<String>) {
+                                    Log.d("log",response.toString())
+                                    Log.d("log", response.body().toString())
+
+                                    Toast.makeText(applicationContext, "btn click", Toast.LENGTH_SHORT).show()
+                                }
+                                override fun onFailure(call: Call<String>, t: Throwable) {
+                                    // 실패
+                                    Log.d("log",t.message.toString())
+                                    Log.d("log","fail")
+
+                                    Toast.makeText(applicationContext, "btn click22222", Toast.LENGTH_SHORT).show()
+                                }
+                            })
 
                             val header = "Bearer $token" // Bearer 다음에 공백 추가
 

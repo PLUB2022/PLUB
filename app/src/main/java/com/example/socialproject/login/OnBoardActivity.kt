@@ -7,6 +7,7 @@ import android.util.Log
 import androidx.appcompat.widget.AppCompatButton
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 
 class OnBoardActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class OnBoardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_on_board)
 
         val nextButton : AppCompatButton = findViewById(R.id.nextButton)
-        //var dotsIndicator = findViewById<WormDotsIndicator>(R.id.dots_indicator)
+        var dotsIndicator = findViewById<DotsIndicator>(R.id.dots_indicator)
         // 인디케이터 디자인 적용 시도 실패
 
         //임시 온보딩 타이틀
@@ -38,10 +39,9 @@ class OnBoardActivity : AppCompatActivity() {
                     "쉬이 하늘에는 내일 묻힌 까닭입니다. 마리아 아침이 써 이국 책상을 봅니다.",
         )
 
-        var OnBoardViewPager : ViewPager2 = findViewById(R.id.OnBoardPager)
+        val OnBoardViewPager : ViewPager2 = findViewById(R.id.OnBoardPager)
         OnBoardViewPager.adapter = OnBoardAdapter(titleList, contentList)
         OnBoardViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-      //  dotsIndicator.setViewPager2(OnBoardViewPager)
         OnBoardViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
 
             // Paging 완료되면 호출
@@ -67,5 +67,7 @@ class OnBoardActivity : AppCompatActivity() {
                 OnBoardViewPager.setCurrentItem(temp + 1, true)
             }
         }
+
+        dotsIndicator.setViewPager2(OnBoardViewPager)
     }
 }

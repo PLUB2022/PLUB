@@ -43,8 +43,9 @@
         app:layout_constraintTop_toBottomOf="@id/OnBoardTitle"
         android:layout_marginTop="10dp"
         android:layout_alignParentTop="true"
-        android:text="아직 불러 부끄러운 무성할 벌레는 새워 까닭입니다. 사람들의 나는 노새, 언덕 가을 거외다. 부끄러운 하나에 어머니, 잔디가 별 책상을 이제 없이 거외다. 쉬이 하늘에는 내일 묻힌 까닭입니다. 마리아 아침이 써 이국 책상을 봅니다."
-        android:textAppearance="@style/OnBoardText"
+        android:fontFamily="@font/pretendard_variable"
+        android:textSize="14dp"
+        android:text="아직 불러 부끄러운 무성할 벌레는 새워 까닭입니다.\n사람들의 나는 노새, 언덕 가을 거외다. 부끄러운 하나에 어머니, 잔디가 별 책상을 이제 없이 거외다. 쉬이 하늘에는 내일 묻힌 까닭입니다. 마리아 아침이 써 이국 책상을 봅니다."
         android:gravity="center_horizontal|top"
         />
 

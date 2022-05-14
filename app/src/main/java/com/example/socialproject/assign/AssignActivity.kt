@@ -9,6 +9,7 @@ import androidx.core.view.get
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.socialproject.R
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 
 class AssignActivity : AppCompatActivity() {
     lateinit var viewPager : ViewPager2
@@ -17,8 +18,10 @@ class AssignActivity : AppCompatActivity() {
         setContentView(R.layout.activity_assign)
 
         viewPager = findViewById(R.id.assignViewPager)
+        val assignIndicator = findViewById<DotsIndicator>(R.id.assignIndicator)
         val pagerAdapter = AssignAdapter(this, this)
         viewPager.adapter = pagerAdapter
+        assignIndicator.setViewPager2(viewPager)
 
         viewPager.isUserInputEnabled = false
 

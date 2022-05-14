@@ -62,6 +62,8 @@ class NaverMapTestActivity : AppCompatActivity(), OnMapReadyCallback {
         var currentLocation: Location?
 
         //권한 설정
+        ActivityCompat.requestPermissions(this,
+            arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION , android.Manifest.permission.ACCESS_COARSE_LOCATION), LOCATION_PERMISSTION_REQUEST_CODE)
         if (ActivityCompat.checkSelfPermission(
                 this,
                 android.Manifest.permission.ACCESS_FINE_LOCATION
