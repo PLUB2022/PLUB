@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.socialproject.HomeActivity
 import com.example.socialproject.R
 import com.example.socialproject.assign.AssignActivity
+import com.example.socialproject.common.Retrofit2Client
 import com.example.socialproject.mapTest.MapTestActivity
 import com.kakao.sdk.common.util.Utility
 import com.nhn.android.naverlogin.OAuthLogin
@@ -30,7 +31,7 @@ import java.net.URL
 class LoginActivity : AppCompatActivity() {
     private lateinit var mOAuthLoginInstance: OAuthLogin
     private lateinit var mContext: Context
-    val api: LoginService = LoginService.create()
+    val api: LoginService = Retrofit2Client.create()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
