@@ -7,19 +7,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.socialproject.R
-import com.example.socialproject.homeFragment.PagerRecyclerAdapter
 
 class OnBoardAdapter(private val Title: ArrayList<String>, private val Content : ArrayList<String>) : RecyclerView.Adapter<OnBoardAdapter.PagerViewHolder>() {
 
     inner class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val OnBoardImage : ImageView = itemView.findViewById(R.id.OnBoardImage)
-        private val OnBoardTitle: TextView = itemView.findViewById(R.id.OnBoardTitle)
-        private val OnBoardText: TextView = itemView.findViewById(R.id.OnBoardText)
+        private val onBoardImage : ImageView = itemView.findViewById(R.id.OnBoardImage)
+        private val onBoardTitle: TextView = itemView.findViewById(R.id.OnBoardTitle)
+        private val onBoardText: TextView = itemView.findViewById(R.id.OnBoardText)
 
         fun bind(title: String, content: String, position: Int) {
-            OnBoardTitle.text = title
-            OnBoardText.text = content
+            onBoardTitle.text = title
+            onBoardText.text = content
         }
     }
 
